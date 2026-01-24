@@ -3,43 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membaca - Arunika Mozaik</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <title>Membaca Novel - Arunika Mozaik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background: #020617; color: #e2e8f0; font-family: 'Lora', serif; line-height: 1.8; }
-        .top-nav { position: sticky; top: 0; background: rgba(2, 6, 23, 0.9); backdrop-filter: blur(10px); padding: 15px 20px; display: flex; justify-content: space-between; border-bottom: 1px solid rgba(244, 114, 182, 0.2); z-index: 100; }
-        .back-btn { color: #fbcfe8; text-decoration: none; font-family: 'Quicksand', sans-serif; }
-        .controls button { background: none; border: 1px solid #fbcfe8; color: #fbcfe8; padding: 2px 10px; border-radius: 5px; margin-left: 5px; }
-        article { max-width: 600px; margin: 40px auto; padding: 0 25px 100px; }
-        h2 { font-family: 'Cinzel', serif; font-size: 1.8rem; color: #fbcfe8; text-align: center; margin-bottom: 10px; }
-        .story-text { font-size: 1.1rem; text-align: justify; }
-        footer { text-align: center; padding: 40px; opacity: 0.3; font-size: 0.8rem; font-family: 'Cinzel', serif; }
+        body { margin: 0; background: #020617; color: #fce7f3; font-family: 'Quicksand', sans-serif; overflow: hidden; }
+        .nav { padding: 15px; background: rgba(2,6,23,0.9); display: flex; align-items: center; border-bottom: 1px solid rgba(244,114,182,0.2); }
+        .nav a { color: #fbcfe8; text-decoration: none; font-size: 0.9rem; }
+        .pdf-container { width: 100%; height: calc(100vh - 60px); }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-    <div class="top-nav">
-        <a href="index.html" class="back-btn">← Kembali</a>
-        <div class="controls">
-            <button onclick="changeFont(-1)">A-</button>
-            <button onclick="changeFont(1)">A+</button>
-        </div>
+    <div class="nav"><a href="index.html">← Kembali</a> <span style="margin-left:20px; font-family:'Cinzel';">Perpustakaan Novel</span></div>
+    
+    <div class="pdf-container">
+        <iframe src="nama-file-novel.pdf"></iframe>
     </div>
-    <article>
-        <h2>Kepingan Pertama</h2>
-        <div class="story-text" id="storyContent">
-            <p>Selamat datang di halaman bacamu! Di sini, ceritamu akan terlihat sangat elegan di bawah langit malam Arunika.</p>
-            <br>
-            <p>Gunakan tombol A+ di atas untuk memperbesar tulisan jika kamu merasa teksnya terlalu kecil.</p>
-        </div>
-    </article>
-    <footer>Arunika Mozaik</footer>
-    <script>
-        let currentSize = 1.1;
-        function changeFont(delta) {
-            currentSize += delta * 0.1;
-            document.getElementById('storyContent').style.fontSize = currentSize + 'rem';
-        }
-    </script>
 </body>
 </html>
