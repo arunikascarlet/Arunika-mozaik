@@ -1,33 +1,54 @@
-<!DOCTYPE html>
+<><!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Symphony</title>
+    <title>Symphony- Arunika Mozaik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #0d0d0d;
-            --text-color: #e0e0e0;
-            --accent-color: #ffb7c5; 
-            --box-bg: #1a1a1a;
+        body { 
+            margin: 0; background: #020617; color: #fce7f3; 
+            font-family: 'Quicksand', sans-serif; line-height: 1.9;
+            user-select: none; -webkit-user-select: none;
         }
-        body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Georgia', serif; margin: 0; padding: 0; display: flex; flex-direction: column; align-items: center; }
-        .toolbar { position: fixed; top: 0; width: 100%; background: rgba(26, 26, 26, 0.95); padding: 10px 0; display: flex; justify-content: center; gap: 20px; z-index: 1000; border-bottom: 1px solid var(--accent-color); backdrop-filter: blur(5px); }
-        .toolbar button { background: transparent; color: var(--accent-color); border: 1px solid var(--accent-color); padding: 5px 20px; cursor: pointer; border-radius: 20px; font-weight: bold; }
-        #main-reader { width: 90%; max-width: 700px; margin-top: 100px; margin-bottom: 100px; }
-        h1 { font-size: 2.5em; text-align: center; letter-spacing: 4px; color: var(--accent-color); margin-bottom: 50px; }
-        #content-area { font-size: 19px; line-height: 1.9; text-align: justify; }
-        p { margin-bottom: 30px; }
+        .nav { 
+            padding: 15px 20px; background: rgba(2,6,23,0.95); 
+            border-bottom: 1px solid rgba(244,114,182,0.2); 
+            position: sticky; top: 0; z-index: 100; 
+            display: flex; justify-content: space-between; align-items: center; 
+        }
+        .nav a { color: #fbcfe8; text-decoration: none; font-weight: bold; font-size: 0.8rem; letter-spacing: 1px; }
+        
+        .font-control { display: flex; align-items: center; gap: 10px; }
+        .font-control label { font-size: 0.7rem; color: #f9a8d4; font-family: 'Cinzel'; }
+        input[type=range] { cursor: pointer; accent-color: #f472b6; }
+
+        .content { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-family: 'Cinzel', serif; text-align: center; color: #fbcfe8; font-size: 1.8rem; margin-bottom: 5px; text-transform: uppercase; }
+        .author { text-align: center; opacity: 0.6; font-size: 0.8rem; margin-bottom: 50px; letter-spacing: 3px; }
+        .story-img { width: 100%; border-radius: 10px; margin: 40px 0; border: 1px solid rgba(244,114,182,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        
+        #story-container p { margin-bottom: 25px; text-align: justify; font-size: 17px; transition: 0.2s; }
+        #story-container i { color: #f9a8d4; font-style: italic; }
+        
+        .divider { text-align: center; color: #f472b6; margin: 40px 0; letter-spacing: 10px; opacity: 0.5; font-size: 1.5rem; }
     </style>
 </head>
-<body>
-    <div class="toolbar">
-        <button onclick="changeFontSize(-1)">A -</button>
-        <button onclick="resetFontSize()">RESET</button>
-        <button onclick="changeFontSize(1)">A +</button>
+<body oncontextmenu="return false;">
+    <div class="nav">
+        <a href="cerpen.html">← RAK BUKU</a>
+        <div class="font-control">
+            <label>A-</label>
+            <input type="range" id="fontSizeRange" min="14" max="26" value="17">
+            <label>A+</label>
+        </div>
     </div>
-    <div id="main-reader">
-        <h1>OUR SYMPHONY</h1>
+
+    <article class="content">
+        <img src="visualsimfoni.png" alt="Visual Ophelia" class="story-img">
+
+        <h1>Our Symphony<br><span style="font-size: 1rem; opacity: 0.8;"></span></h1>
+        <p class="author">By Arunika Scarlet</p>
         <div id="content-area">
           <p>Di antara dinginnya malam, hanya ada suara metronom yang monoton di dalam ruangan dengan dinding kedap suara. Di antara banyak alat di sana, seorang pria duduk sambil menatap ke arah monitor di depannya. Satu tangannya menopang dagu, sementara tangan lainnya sedang mengetuk ujung meja. Pikirannya terus terarah pada nada-nada yang sejak tadi ia otak-atik.</p>
 
