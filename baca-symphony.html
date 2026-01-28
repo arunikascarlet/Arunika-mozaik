@@ -564,6 +564,31 @@
         const content = document.getElementById('content-area');
         function changeFontSize(delta) { currentSize += delta; content.style.fontSize = currentSize + 'px'; }
         function resetFontSize() { currentSize = 19; content.style.fontSize = currentSize + 'px'; }
-    </script>
+     <div id="story-container">
+        <p>Isi cerita kamu...</p>
+    </div>
+
+    <div class="divider">***</div>
+</article>
+
+<script>
+    const range = document.getElementById('fontSizeRange');
+    const storyContainer = document.getElementById('story-container');
+
+    range.addEventListener('input', function() {
+        // Mengubah ukuran font pada kontainer utama
+        const newSize = this.value + 'px';
+        
+        // Mengambil semua paragraf di dalam story-container
+        const paragraphs = storyContainer.querySelectorAll('p');
+        paragraphs.forEach(p => {
+            p.style.fontSize = newSize;
+        });
+    });
+</script>
+
+</body> </html>
+   </script>
+
 </body>
 </html>
