@@ -1,4 +1,4 @@
-<><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,14 @@
         .author { text-align: center; opacity: 0.6; font-size: 0.8rem; margin-bottom: 50px; letter-spacing: 3px; }
         .story-img { width: 100%; border-radius: 10px; margin: 40px 0; border: 1px solid rgba(244,114,182,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         
-        #story-container p { margin-bottom: 25px; text-align: justify; font-size: 17px; transition: 0.2s; }
+        /* INI KODE UNTUK RATA KANAN KIRI */
+        #story-container p { 
+            margin-bottom: 25px; 
+            text-align: justify; /* Rata kanan kiri */
+            text-justify: inter-word;
+            font-size: 17px; 
+            transition: 0.2s; 
+        }
         #story-container i { color: #f9a8d4; font-style: italic; }
         
         .divider { text-align: center; color: #f472b6; margin: 40px 0; letter-spacing: 10px; opacity: 0.5; font-size: 1.5rem; }
@@ -47,8 +54,30 @@
     <article class="content">
         <img src="visualsimfoni.png" alt="Visual simfoni" class="story-img">
 
-        <h1>Our Symphony<br><span style="font-size: 1rem; opacity: 0.8;"></span></h1>
+        <h1>Our Symphony</h1>
         <p class="author">By Arunika Scarlet</p>
+
+        <div id="story-container">
+            </div>
+
+        <div class="divider">***</div>
+    </article>
+
+    <script>
+        const range = document.getElementById('fontSizeRange');
+        const storyContainer = document.getElementById('story-container');
+        const paragraphs = storyContainer.getElementsByTagName('p');
+
+        range.addEventListener('input', function() {
+            const newSize = this.value + 'px';
+            for (let p of paragraphs) {
+                p.style.fontSize = newSize;
+            }
+        });
+    </script>
+</body>
+</html>
+
         <div id="content-area">
           <p>Di antara dinginnya malam, anya ada suara metronom yang monoton di dalam ruangan dengan dinding kedap suara. Di antara banyak alat di sana, seorang pria duduk sambil menatap ke arah monitor di depannya. Satu tangannya menopang dagu, sementara tangan lainnya sedang mengetuk ujung meja. Pikirannya terus terarah pada nada-nada yang sejak tadi ia otak-atik.</p>
 
