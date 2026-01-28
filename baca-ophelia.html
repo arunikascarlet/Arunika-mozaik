@@ -11,21 +11,37 @@
             font-family: 'Quicksand', sans-serif; line-height: 1.9;
             user-select: none; -webkit-user-select: none;
         }
-        .nav { padding: 20px; background: rgba(2,6,23,0.95); border-bottom: 1px solid rgba(244,114,182,0.2); position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; }
+        .nav { 
+            padding: 15px 20px; background: rgba(2,6,23,0.95); 
+            border-bottom: 1px solid rgba(244,114,182,0.2); 
+            position: sticky; top: 0; z-index: 100; 
+            display: flex; justify-content: space-between; align-items: center; 
+        }
         .nav a { color: #fbcfe8; text-decoration: none; font-weight: bold; font-size: 0.8rem; letter-spacing: 1px; }
+        
+        .font-control { display: flex; align-items: center; gap: 10px; }
+        .font-control label { font-size: 0.7rem; color: #f9a8d4; font-family: 'Cinzel'; }
+        input[type=range] { cursor: pointer; accent-color: #f472b6; }
+
         .content { max-width: 700px; margin: 0 auto; padding: 40px 20px; }
         h1 { font-family: 'Cinzel', serif; text-align: center; color: #fbcfe8; font-size: 1.8rem; margin-bottom: 5px; text-transform: uppercase; }
         .author { text-align: center; opacity: 0.6; font-size: 0.8rem; margin-bottom: 50px; letter-spacing: 3px; }
         .story-img { width: 100%; border-radius: 10px; margin: 40px 0; border: 1px solid rgba(244,114,182,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        .text-body p { margin-bottom: 25px; text-align: justify; font-size: 1.05rem; white-space: pre-wrap; }
-        .text-body i { color: #f9a8d4; font-style: italic; }
+        
+        #story-container p { margin-bottom: 25px; text-align: justify; font-size: 17px; transition: 0.2s; }
+        #story-container i { color: #f9a8d4; font-style: italic; }
+        
         .divider { text-align: center; color: #f472b6; margin: 40px 0; letter-spacing: 10px; opacity: 0.5; font-size: 1.5rem; }
     </style>
 </head>
 <body oncontextmenu="return false;">
     <div class="nav">
         <a href="cerpen.html">← RAK BUKU</a>
-        <span style="font-family:'Cinzel'; font-size: 0.7rem; opacity: 0.5;">ARUNIKA MOZAIK</span>
+        <div class="font-control">
+            <label>A-</label>
+            <input type="range" id="fontSizeRange" min="14" max="26" value="17">
+            <label>A+</label>
+        </div>
     </div>
 
     <article class="content">
@@ -33,7 +49,8 @@
 
         <h1>OPHELIA<br><span style="font-size: 1rem; opacity: 0.8;">Captured in the Clown's Smile</span></h1>
         <p class="author">By Arunika Scarlet</p>
-                <div class="text-body">
+
+        <div id="story-container">
             <p>Suasana pasar selalu sama. Penuh dengan suara bising akan penjual yang menjajahkan barang dagangannya dengan berteriak memanggil siapapun yang lewat, suara tapak kaki keledai dan kuda yang sedang membawa hasil belanjaan orang-orang, suara bersautan yang saling melemparkan harga, dan suara halus dari minyak di penggorengan yang bertemu dengan lauk pauk. Bau sedap dan tidak sedap seolah bercampur menjadi satu, bau dari sampah-sampah yang tergeletak tanpa ada yang peduli, menyengat dari berbagai sisi, bercampur dengan bau masakan yang baru saja dibuat.</p>
 
             <p>Diantara dunia yang begitu sibuk, seorang gadis menorehkan cat hitam pada selembar <i>canvas</i> putuh yang tak lagi putih. Bisingnya dunia tak lagi menganggu baginya. Seolah semua suara itu hanyalah alunan lagu sumbang yang menghiasai harinya dengan corak hitam. Sama persis seperti apa yang sedang ia lukis. Suara dengung mesin mengganggu konsentrasinya. Gerakan tangannya yang lihai terhenti. Ia menoleh. Langsung mendapati beberapa pemuda melihatnya dari depan gerainya. Tatapan yang mereka layangkan jelas bukanlah tatapan seorang pelanggan yang hendak membeli barang darinya.</p>
@@ -105,6 +122,561 @@
             <p>"Tidak."</p>
 
             <p>Amber terus mengikuti Ophelia sambil menggoda kawannya itu.</p>
+        </div>
+
+        <div class="divider">•••</div>
+                    <p>"Aku akan berjalan-jalan di kota. Mungkin pulang malam jadi jangan tunggu aku." Pria berambut <i>raven</i> itu berjalan meninggalkan ruangan. Ia melepas jaket bulunya dan melemparnya ke arah kursi di dekat sana. Mengambil jubah dan keluar dari kapal terbang yang kini mendarat di tanah.</p>
+
+            <p>Netra kelabu itu langsung menyorot sekeliling. Mencari tujuan kemana ia akan menjelajah kota sebelum nantinya akan melakukan pertunjukan. Ya, pria itu adalah salah satu anggota dari <i>Twillight Troupe</i>, atau lebih tepatnya, sang pemimpin dan dijuluki sebagai <i>Clown</i>. Tak pernah ada yang tahu siapa nama aslinya, atau dari mana ia berasal, bahkan bagi anggota kelompok itu sendiri. Mereka hanya menyebut diri masing-masing sesuai dengan keahlian mereka.</p>
+
+            <p>Tujuannya kali ini adalah pasar. Tempat yang menjadi jantung sebuah kota. Ia melangkah menjejakkan kaki di antara kios-kios yang ada disana, mulai dari kios panganan, bahan masakan, ataupun buah, dan perabotan, semua terjual disana. Namun, tak ada satupun yang menarik perhatian <i>Clown</i>. Pria itu menghela napas. Helaian rambut putihnya terlihat keluar dari jubahnya. Matanya masih menyoroti sekeliling.</p>
+
+            <p>"Mungkin, karena aku sudah mencuri banyak hal, aku sudah tidak tertarik pada apapun." Gumaman itu dibarengi dengan helaan napas panjang untuk kedua kalinya.</p>
+
+            <p><i>Clown</i> berbalik, ia memutuskan untuk kembali ke kapal terbangnya. Langkah demi langkah, <i>Clown</i> hampir keluar dari wilayah pasar. Hingga satu benda yang dibawa oleh sepasang suami istri yang tampak seperti pedagang keliling menarik perhatiannya. Sebuah guci tembikar dengan warna dan ukuran yang unik. <i>Clown</i> spontan mendekat. Ia memegang tangan si suami dengan kepala tertunduk. Enggan menunjukkan wajahnya.</p>
+
+            <p>"Maaf, bisakah Anda mengatakan dimana Anda mendapatkan tembikar ini?"</p>
+
+            <p>Ditengah keterkejutan, sang suami mengangguk dan menyebutkan nama toko yang sempat ia datangi tadi. Tanpa banyak bicara lagi, <i>Clown</i> menganggukkan kepalanya dan berbalik. Memasuki lagi area pasar sesuai dengan arah tunjuk yang di berikan. Bayangannya dipenuhi dengan wujud tembikar yang ia lihat hanya sebentar itu. Warna-warna yang bercorak dengan ukiran-ukiran yang intens, dan bentuk yang tidak biasa. Semua itu masih terbayang jelas dipikiran <i>Clown</i>.</p>
+
+            <p>Langkah pria berambut <i>raven</i> itu melambat saat mencapai sudut pasar yang lebih tenang. Papan kayu sederhana di atas sebuah gerai menarik matanya: <i>La beauté intemporelle</i>—Keindahan yang Abadi. Nama yang ambisius untuk sebuah toko kecil di pinggiran pasar yang berdebu.</p>
+
+            <p><i>Clown</i> masuk ke dalam bayang-bayang gerai. Seketika, hiruk-pikuk pasar di belakangnya seolah teredam oleh dinding-dinding kayu. Di sana, seorang gadis duduk membungkuk di atas roda putar. Jemarinya yang ramping bergerak dengan ritme yang hampir menyerupai tarian, membelai gumpalan tanah liat basah dengan kelembutan yang menyakitkan. Suara mesin putar yang lirih mendengung, menciptakan harmoni yang aneh di telinga <i>Clown</i>.</p>
+
+            <p>Pria itu terkesima. Ia telah mencuri banyak hal di dunia ini—permata, rahasia, hingga nyawa—namun ia belum pernah melihat seseorang menciptakan sesuatu dengan begitu tekun seolah dunianya hanya terdiri dari tanah dan jemari itu.</p>
+
+            <p>Saat gadis itu akhirnya mendongak untuk menyeka keringat di keningnya, <i>Clown</i> membeku.</p>
+
+            <p>Tudung jubahnya ia tarik lebih dalam, namun matanya tetap terkunci pada wajah di hadapannya. Netra gadis itu bukan hitam, bukan pula biru seperti langit yang baru saja ia belah dengan kapal terbang. Matanya merah pekat, menyerupai anggur <i>crimson</i> yang paling murni, atau permata <i>ruby</i> yang baru saja dibasuh air. Indah, namun menyimpan kejauhan yang tidak terjangkau.</p>
+
+            <p>"Bukan hanya karyanya yang indah," bisik <i>Clown</i> pada diri sendiri, suaranya nyaris hilang ditelan dengung mesin. "Penciptanya jauh lebih berbahaya bagi jantungku."</p>
+
+            <p>Ia memperhatikan bagaimana bibir merah muda gadis itu terkatup rapat dalam keseriusan, dan bagaimana kulit pucatnya tampak kontras dengan tanah liat yang gelap. Gadis itu kembali menunduk, memutuskan kontak visual yang bahkan tidak ia sadari.</p>
+
+            <p><i>Clown</i> mundur satu langkah, membiarkan dirinya kembali ditabrak oleh arus orang yang lalu lalang, namun pikirannya tertinggal di dalam gerai itu.</p>
+
+            <p>Dua orang pria menambraknya dari belakang, kemudian mendekat ke arah gerai. <i>Clown</i> menatap dengan intens. Bau parfum yang pekat menguar dari kedua pria itu, jelas bukan maksud untuk membeli saja, namun kedua pria itu juga bermaksud untuk menggoda. Meski bau yang menyengat menghilangkan aroma wangi, gadis disana tidak menghiraukan sama sekali.</p>
+
+            <p>Salah seorang menumpu lengan bawahnya ke arah meja gerai. Matanya tertuju pada sosok merah muda pudar dengan balutan baju sederhana. Senyumnya mengembang. Ia melirik ke arah pria disebelahnya, berdehem sebelum akhirnya berucap, "Hei, Ophelia. Kami datang ingin membeli lukisanmu."</p>
+
+            <p>Gadis itu tak bergeming. Tindakannya yang acuh selalu dapat mengundang percikan api di dalam diri pria yang sedang mengajaknya bicara. Kesal, salah seorang pria menggebrak meja.</p>
+
+            <p>Pria disebelah menghentikannya. "Tenanglah. Kita kesini hanya untuk membeli lukisan yang bisa dipajang di aula pesta kita nanti. Jangan marah karena hal remeh."</p>
+
+            <p>"Cih."</p>
+
+            <p>"Ophelia, seperti yang kau dengar, kami disini berniat untuk mengadakan pesta. Rasanya ada yang kurang di aula pesta, jadi kami datang untuk melengkapinya dengan lukisanmu. Maukah kau membantu kami memilih lukisan?"</p>
+
+            <p>Dan sekali lagi, Ophelia hanya fokus pada kegiatannya. Tanah liat yang sebentar lagi berbentuk sempurna terus ditekan dengan lembut. Ia melirik pada dua pemuda disana. "Ambil dan bayar yang kalian mau. Harga ada dibelakang <i>canvas</i>."</p>
+
+            <p><i>Clown</i> tersenyum.</p>
+
+            <p>"Ophelia," ia mengecap nama itu di lidahnya.</p>
+
+            <p>"Sepertinya, aku sudah menemukan benda paling berharga di kota ini."</p>
+
+            <p><i>Clown</i> mulai menghilang, menyatu dengan hiruk-pikuk pasar yang semakin ramai menjelang sore hari.</p>
+
+            <img src="opheliamark.png" alt="Bookmark" class="bookmark-img">
+
+            <p>Matahari baru saja tenggelam di ufuk barat, meninggalkan sisa warna jingga yang segera ditelan gelap. Cahaya kekuningan dari lampu lilin mulai berkedip di jendela-jendela rumah, namun alun-alun kota seolah menolak untuk padam. Sebuah tenda raksasa berdiri kokoh di sana, bermandikan cahaya lampu yang benderang. Di atasnya, sebuah kapal terbang besar melayang rendah tanpa suara, diam mematung layaknya pemangsa yang sedang mengintai dari langit.</p>
+
+            <p>Di bawahnya, kerumunan orang dari penjuru kota berdatangan, berdesakan demi sejumput tiket masuk. Wajah-wajah mereka berseri, penuh antusiasme yang haus akan keajaiban. Mereka tidak tahu kegelapan macam apa yang sedang menanti di balik tirai beludru merah itu.</p>
+
+            <p>Di balik panggung, <i>Clown</i> berdiri mematung sembari merapikan kancing di pergelangan tangannya. Senyumnya merekah singkat, tipis, and penuh obsesi. "Kali ini, dia yang akan melihatku. Akan kupastikan tatapannya tidak teralihkan dariku sedikit pun."</p>
+
+            <p>Berbeda dengan gairah <i>Clown</i> yang meluap, atmosfer di sekitarnya justru membeku. Sang <i>Musician</i> menatap <i>Clown</i> dengan pandangan sangsi, lalu melirik kedua rekannya yang lain. "Apa dia baik-baik saja?"</p>
+
+            <p><i>Knife Thrower</i> hanya mendengus, jemarinya lincah mengasah belati dengan gerakan yang membuat bulu kuduk berdiri. "Apa peduliku? Paling-paling, pemimpin kita sedang membayangkan bagaimana cara mencuri bayaran untuk pertunjukan ini," sahutnya dingin, tak acuh.</p>
+
+            <p>"Memangnya sudah ada targetnya? Yang kulihat, dia hanya berjalan-jalan tanpa arah selama berhari-hari. Benar, bukan, <i>Marionette</i>?"</p>
+
+            <p>Sang <i>Puppeteer</i> hanya mengangguk pelan sembari mengangkat bonekanya. "Ya, benar," bisiknya lirih, menjadi titik akhir percakapan mereka.</p>
+
+            <p>Tiba-tiba, <i>Clown</i> menjentikkan jari dari kejauhan—sebuah isyarat bahwa waktu bersantai telah habis. Detik berikutnya, suara lampu gas yang mati terdengar serempak. Alun-alun yang tadinya bising mendadak disergap sunyi yang mencekik. Tak lama, sebuah lampu sorot tunggal menghujam dari arah kapal terbang di atas tenda, menyinari lubang besar di puncak panggung.</p>
+
+            <p>Di titik cahaya itu, <i>Clown</i> berdiri. Ia mengenakan topeng putih porselennya, membetulkannya dengan gerakan kaku yang janggal. Di balik topeng, ia menarik napas dalam. Jarinya menjentik tiga kali, dan seketika musik yang megah meledak, mengalun hingga ke pelosok kota. Pertunjukan berdarah itu resmi dimulai.</p>
+
+            <p>Asap ungu merayap di lantai panggung, menebal seiring jatuhnya kelopak bunga hitam dari langit-langit tenda. Di tengah hiruk-pikuk melodi, <i>Knife Thrower</i> beraksi, ia melesat bagai penari, belatinya membelah kelopak mawar yang berguguran di udara. Ia melemparkan pisau-pisaunya ke arah penonton—membuat mereka terpekik ngeri—hanya untuk melihat senjata perak itu menancap sempurna pada target di atas kepala mereka, tepat mengikuti dentuman nada dari Sang <i>Musician</i>.</p>
+
+            <p><i>Puppeteer</i> muncul di tengah kepulan asap, mengendalikan boneka-bonekanya dengan kelincahan yang mustahil. <i>Clown</i> tidak tinggal diam, ia menari bersama boneka-boneka itu, tubuhnya meliuk mengikuti benang-benang tak kasat mata. Musik mencapai puncaknya, suasananya kian memanas hingga tak ada seorang pun yang berani berkedip.</p>
+
+            <p>Lalu, tibalah momen itu. <i>Clown</i> melepas topengnya, melompat tinggi, dan bergelantungan di atas tali yang melintang. Netra kelabunya langsung menyambar kursi kayu berlapis emas yang telah ia siapkan secara khusus di baris terdepan.</p>
+
+            <p>Rahangnya mengeras seketika. Kursi itu kosong.</p>
+
+            <p>Tak ada gaun cantik, tak ada rambut merah muda pudar, tak ada tatapan kagum dari Ophelia. Gadis itu tetap tidak datang ke tempat yang telah ia siapkan dengan sempurna.</p>
+
+            <p>Senyumnya masih merekah, meski ujung bibirnya bergetar hebat. Gemuruh di dadanya kini bukan lagi gairah, melainkan kemarahan yang meluap. Lagu yang tadinya terdengar megah, kini seolah berubah menjadi tawa ejekan yang mengolok-olok kegagalannya.</p>
+
+            <p>Dengan kode tajam, <i>Clown</i> memerintahkan Sang <i>Musician</i> mempercepat tempo. Piano menderu liar. <i>Knife Thrower</i> menangkap sinyal bahaya itu. Lemparan belatinya kini melesat lebih tipis, hampir menyerempet kulit penonton, menciptakan horor yang disangka seni. <i>Clown</i> menghentakkan kakinya ke panggung dengan penuh kebencian, meluapkan seluruh kesalannya ke dalam setiap gerakan agresif.</p>
+
+            <p>Sebagai penutup, <i>Knife Thrower</i> melemparkan semua pisaunya ke langit, membentuk lingkaran logam yang mengancam. <i>Clown</i> melompat di tengah hujan belati itu, memutar tubuhnya di udara, sebelum mendarat sempurna dengan tangan terentang. Kembang api perak meledak dingin, mengakhiri simfoni amarah tersebut.</p>
+
+            <p>Riuh sorakan memecah kesunyian. Ribuan orang berdiri, meneriakkan nama <i>Twilight Troupe</i> dengan penuh pemujaan. Ketiga anggota lainnya tersenyum bangga, namun <i>Clown</i> justru tertunduk. Ia mengenakan kembali topeng putihnya, menyembunyikan kenyataan pahit bahwa meski ia telah menaklukkan hati seluruh kota, ia tetap gagal menyentuh satu hati yang paling ia inginkan. Tangannya terkepal erat, ia merasa terhina.</p>
+
+            <p>Jauh dari kebisingan itu, di sebuah dapur kecil yang sunyi, seorang gadis duduk tenang di kursi rodanya. Ia baru saja memasukkan adonan ke dalam oven, membiarkan aroma manis dari kayu manis dan roti hangat membelai indranya. Tatapan matanya yang merah fokus pada panggangan yang mengeluarkan uap panas, mengagumi kebahagiaan sederhana yang ada di depan matanya.</p>
+
+            <p>Ia tersenyum sangat tulus, sama sekali tidak menyadari bahwa di bawah cahaya lampu kota, seseorang sedang hancur karena meratapi ketidakhadirannya.</p>
+
+            <p>"Pertunjukan tadi intens sekali." <i>Knife Thrower</i> mengeluh. Ia merenggangkan otot bahunya.</p>
+
+            <p><i>Musician</i> mengangguk setuju. Ia mulai menanggalkan kostumnya. Dirinya teringat akan sesuatu. "Tiba-tiba saja, pemimpin meminta kita menaikkan performa. Dia terlihat kesal sekali."</p>
+
+            <p>"Benar." Suara <i>Puppeteer</i> yang samar mengalun disusul dengan sunyi. Mereka bertiga sibuk berganti pakaian dan menghapus riasan tebal yang tadi digunakan. <i>Marionette</i> diarahkan duduk menghadap meja rias yang seharusnya digunakan untuk <i>Clown</i>. <i>Knife Thrower</i> yang ada disebelah tempat duduk itu melihat ke aran boneka yang tampak sedikit menyeramkan itu. "Apa yang kau lihat?" tanyanya dengan tajam.</p>
+
+            <p><i>Puppeteer</i> dengan cepat mengangkat bonekanya dan mencicit, "Aku hanya melihat ... Pe-pemimpin kita tidak ada ditempatnya."</p>
+
+            <p><i>Musician</i> langsung menoleh ke arah kursi disana. "Kau benar. Kemana dia? Mengambil bayaran? Wah ... Dia semangat sekali."</p>
+
+            <p>Mereka bertiga melanjutkan kegiatan membersihkan wajah. Tanpa sadar kalau pemimpin kelompok mereka pergi bukan dengan rasa semangat. Langkah pria itu bukan ringan, seperti pada saat dia pertama kali datang. Kali ini, langkahnya terasa lebih berat, lebih cepat, dan penuh dengan amarah. Kostumnya yang megah bahkan masih melekat di badannya. Begitupun dengan riasannya. Ia hanya membalut kostumnya dengan jubah hitam. Berjalan menuju tempat yang ia yakini terdapat seseorang yang sejak tadi ia cari.</p>
+
+            <p>Napasnya memburu. Ia berdiri tepat di depan toko roti milik Amber. Netranya melihat sekeliling. Suasana temaram, hanya ada beberapa lampu yang berjarak cukup jauh. Namun, dari dalam dapat terlihat setitik cahaya. <i>Clown</i> memasuki gang yang ada disebelah toko.</p>
+
+            <p>Di tengah gelap, jubahnya menyatu dengan sekitar, menjadikannya tak terlihat diantara kegelapan yang ada. <i>Clown</i> sampai di bagian belakang. Sosoknya berdiri dibawah bayangan rumah, sementara tatapannya hanya lurus, tertuju ke arah bingkai jendela yang mengepulkan uap hangat.</p>
+
+            <p>Di dalam sana, dunia terasa berbeda dengan apa yang <i>Clown</i> tahu. Ia melihat gadis itu, gadis yang sudah ia perhatiakan sejak awal, Ophelia. Gadis itu tidak sedang menderita karena melewatkan pertunjukan spektakuler yang baru saja berlangsung, ataupun terlihat sedang kesulitan. Gadis justru sedang tertawa. Sebuah tawa yang bahkan tak pernah <i>Clown</i> lihat selama ia memperhatikannya. Di sebelahnya, Amber menumpuk loyang yang telah dipakai. Ia tampak sedang bercerita pada Ophelia dengan senyum ringan. Kehangatan dari hubungan akrab mereka terasa begitu alami, penuh kebahagiaan dan rasa syukur. Sesuatu yang rasanya berbanding terbalik dengan kemewahan dan kemegahan yang selama ini <i>Clown</i> jalani. Kehidupan itu seakan tak membutuhkan lampu sorot, kostum indah dengan kain terbaik, ataupun tepuk tangan penonton yang menyukainya. Mereka justru tampak sederhana dan cukup.</p>
+
+            <p>Perbedaan itu terasa seperti palu besar yang memukul dada <i>Clown</i>. Rasa hina yang tadi hinggap di dadanya berubah menjadi kecemburuan. Tawa Ophelia yang terasa begitu ringan justru seakan menjadi anak panah yang menancap di dadanya, satu persatu, melukai harga diri seorang <i>Clown</i> tentang pandangan kehidupan. Setiap senyum yang Ophelia berikan pada Amber justru terasa seperti racun baginya. Tangannya mengepal erat. Kuku-kuku dari balik sarung tangan hitam itu seolah bersiap merobek kain.</p>
+
+            <p>Amarah itu berubah menjadi aura hitam. Terasa begitu pekat, dan mungkin, jika manusia biasa berada di dekatnya, orang itu akan pingsan. Aura yang tidak bisa dihentikan itu bahkan terasa menembus dinding dapur.</p>
+
+            <p>Di dalam sana, gerakan Ophelia yang sedang mengaduk adonan terhenti. Ia menoleh ke sekeliling. "Apa ini?" gumamnya. Tengkuknya diusap pelan guna meminimalisir rasa merinding. Ia menoleh kembali ke arah sekitar, ia merasa tidak nyaman, seolah ada sepasang mata yang menatapnya dengan tatapan intens, seperti akan menghunuskan pedang ke arahnya. Netra <i>crimson</i>-nya terarah pada jendela. Ia meletakkan adonan itu di meja dan memutar roda kursi rodanya dan bergerak ke arah jendela.</p>
+
+            <p>Tak ada yang bisa ia lihat. Hanya halaman yang langsung terhubung dengan bagian belakang rumah orang lain. Namun semuanya terlihat hitam tanpa ada penerangan selain dari cahaya bulan.</p>
+
+            <p>Ophelia menyipitkan matanya. Pandangannya tertuju pada sesuatu yang tadinya tak ada disana. Di pinggiran jendela, seutas kain tersangkut di paku, bergerak seirama dengan angin malam itu. Saat kain yang terlihat halus itu berkibar karena angin, setangkai bunga berwarna merah darah terlihat di bawahnya. Bunga itu justru tampak sangat kontras dengan kain putih diatasnya, seolah menjadi cipratan darah yang sudah mengering diantara putihnya kain.</p>
+
+            <p>Ophelia mengeratkan tangannya spontan. Jantungnya berdegup kencang tanpa ia minta.</p>
+
+            <p>Amber melihat Ophelia dengan heran. Ia menaruh lap keringnya dan menghampiri kawannya itu. "Ophelia, ada apa?" Amber memecah keheningan yang ada. Ia mengikuti arah pandang Ophelia. "Kain?"</p>
+
+            <p>Amber membuka jendela. Begitu udara luar masuk, aroma parfum yang tajam, dingin, dan sedikit berbau tembaga menyengat hidung mereka. Dengan hati-hati, Amber mengambil kain dan bunga itu lalu membawanya masuk. Ia melihat ke arah Ophelia lalu pada bunga di tangannya. Bunga itu tampak begitu sempurna, kelopaknya tersusun sangat rapat dan rapi, namun keberadaannya di sana terasa salah. Seolah bunga itu baru saja dipetik dari sebuah dunia yang penuh kekerasan dan kemewahan, lalu dibuang begitu saja sebagai peringatan.</p>
+
+            <p>"Kau ... Tahu ini bunga apa?"</p>
+
+            <p>Ophelia mengangguk. Ia menarik napas dengan gemetar. "Ranunculus. Aku pernah mendapatkan bunga seperti ini dari seseorang ..." Suaranya gemetar. "Tapi tidak dengan warna yang ... Seperti darah." Ucapan terakhirnya lebih terasa seperti bisikan.</p>
+
+            <p>Amber memegang kain itu. Terasa halus dan lembut, seolah terbuat dari sutra yang begitu mahal. Sesuatu yang tidak cocok dengan kota mereka. Baik Amber maupun Ophelia kembali melihat ke arah jendela. Suasana hangat yang tadi terasa berganti dengan ketakutan. Ophelia memejamkan mata, ia tak tahu siapa orang yang sudah meninggalkan rasa ketakutan di dapur hangat itu. Namun kepalanya kini penuh, seolah ia dapat mendengarkan dentuman musik yang nyaring, terasa megah dan begitu asing baginya.</p>
+
+            <p>Dari kegelapan yang jauh di dalam gang, Ophelia seakan melihat kilatan putih porselen yang kemudian menghilang, bersatu dengan kegelapan, bersatu dengan ketakutan yang muncul akan rasa waspada yang tidak ada tujuannya.</p>
+
+                    <div class="divider">•••</div>
+
+            <p>Hari berikutnya tiba. Meski kengerian malam sebelumnya masih membekas seperti kabut dingin, Ophelia tetap membuka gerainya. "<i>La Beauté Intemporelle</i>", sebuah ruang kecil di sudut pasar yang menjadi saksi bisu perjuangannya. Di sana, keindahan lukisan berpadu dengan seni tembikar yang rapuh—semuanya adalah manifestasi dari jiwa Ophelia yang ia tuangkan melalui jemari rampingnya demi menyambung hidup.</p>
+
+            <p>Karya-karyanya selalu memancarkan binar cerah, seolah ia ingin mengajak siapa pun yang masuk ke sana melupakan sejenak betapa abu-abunya dunia luar.</p>
+
+            <p>Siang itu, Ophelia tengah bergulat dengan tanah liat. Di atas mesin putar yang berderit pelan, ia mencoba memandu gumpalan tanah itu menjadi bentuk yang simetris. Namun, konsentrasinya buyar. Gerakan tangannya goyah, membuat dinding guci yang ia bangun melengkung tidak beraturan ke dalam. Ia menghela napas, menyandarkan punggungnya pada sandaran kursi roda yang kaku. Kejadian semalam kembali berputar di kepalanya.</p>
+
+            <p>"Sebenarnya, apa yang terjadi? Kain dan bunga itu ..." gumamnya lirih. Ia masih bisa merasakan tekstur kelopak <i>ranunculus</i> yang rapat itu di dalam ingatannya. "Warnanya terlalu pekat ... seolah bunga itu telah meminum darah."</p>
+
+            <p>"Nona?"</p>
+
+            <p>Panggilan itu memecah lamunannya. Seorang wanita paruh baya berdiri di depan gerai dengan binar kagum. Ophelia segera mengulas senyum ramah—topeng profesional yang ia pakai setiap hari—lalu memutar roda kursi rodanya dengan gerakan terlatih untuk mendekat. "Ada yang bisa saya bantu, Bu?"</p>
+
+            <p>"Aku sudah lama memperhatikan geraimu dari jauh. Semuanya tampak begitu indah, aku ingin melihat lebih dekat."</p>
+
+            <p>"Silakan, Anda boleh melihat-lihat sepuasnya," jawab Ophelia lembut.</p>
+
+            <p>Saat wanita itu mulai menelusuri setiap sudut gerai, Ophelia berbalik hendak membersihkan tangannya yang berlumuran tanah liat. Namun, langkah terhenti. Punggungnya mendadak terasa panas, seolah ada cahaya matahari yang dipusatkan tepat di tengkuknya. Buku kuduknya meremang hebat, seolah menjadi tanda kalau ia sedang diawasi. Semuanya terasa lebih intens dari biasanya. Ophelia memegang tengkuknya.</p>
+
+            <p>Di seberang jalan, tersembunyi di balik bayangan kanopi toko perhiasan, <i>Clown</i> memperhatikan dengan kekehan yang tertahan. Netranya menyipit, membedah setiap inci sosok Ophelia dari kejauhan dengan intens, seolah tatapan itu akan berubah menjadi sentuhan yang bersifat fisik. "Ah ... tengkuknya jadi kotor karena jemari itu. Harusnya dia lebih berhati-hati merawat dirinya," bisiknya halus, suaranya hilang ditelan kebisingan pasar.</p>
+
+            <p><i>Clown</i> bangkit dengan keanggunan seorang predator. Ia tidak ingin membuat "buruan"-nya sadar terlalu dini. Pria itu melangkah pergi, namun pikirannya tetap tertinggal di gerai itu, terikat pada sosok gadis yang terus-menerus memancing rasa cemburunya.</p>
+
+            <p>Tujuh hari berikutnya berubah menjadi periode pengintaian yang sistematis. <i>Clown</i> berubah menjadi momok yang tak terlihat namun kehadirannya merayap di bawah kulit Ophelia. Ia belajar mencintai kegelapan yang menyelimuti kota, karena di sanalah ia bisa menjadi bayangan yang paling setia bagi Ophelia.</p>
+
+            <p><i>Clown</i> kini telah menghafal ritme hidup gadis itu layaknya sebuah partitur musik yang melelahkan. Ia mengamati bagaimana Ophelia memutar kursi rodanya keluar rumah pada pukul tiga pagi yang membeku—rumah yang juga ia bagi sebagai panti asuhan. <i>Clown</i> melihat bagaimana gadis itu berjuang mengaitkan kantung-kantung belanjaan pada kursi rodanya di jam empat pagi, mendorong rodanya di atas jalanan batu yang kasar dengan napas yang memburu.</p>
+
+            <p>Ia mengawasi saat Ophelia mengurus makan anak-anak dengan sisa energi yang ada, sebelum akhirnya berangkat ke pasar di jam lima. Selama berjam-jam, <i>Clown</i> melihat Ophelia melukis, melayani pembeli, dan dengan dingin mengabaikan setiap pria yang mencoba merayunya. Pukul empat sore, saat toko ditutup, perjuangan Ophelia belum usai. Ia akan menghabiskan waktu di tempat pembakaran tembikar yang panas dan pengap hingga pukul sembilan malam.</p>
+
+            <p>Puncaknya, <i>Clown</i> akan mengikuti siluet kursi roda itu menuju rumah Amber. Di sana, Ophelia akan membantu membuat kue hingga pukul sebelas malam. Selama tujuh hari itu, <i>Clown</i> berdiri di luar jendela, memperhatikan bagaimana cahaya lilin menerpa wajah Ophelia yang kian pucat karena kelelahan.</p>
+
+            <p>Satu hal yang membuat kemarahan <i>Clown</i> semakin menumpuk, selama pengintaiannya, ia hampir tidak pernah melihat gadis itu benar-benar duduk untuk makan atau menutup mata untuk beristirahat. Ophelia bagai mahakarya yang sedang menghancurkan dirinya sendiri demi orang lain, dan bagi <i>Clown</i>, itu adalah sebuah penistaan yang tak termaafkan.</p>
+
+            <p><i>Clown</i> menghela napas, merapikan <i>jabot</i> rendanya di depan cermin. Wajahnya yang putih bersih tampak kesal. Tujuh hari mengintai ternyata belum cukup meredakan cemburu di dadanya. Dengan jemari terbalut sarung tangan hitam, ia menyentuh pipinya sendiri.</p>
+
+            <p>“Jika saja aku yang merawatnya, kulitnya pasti bisa sebagus ini. Ah, tidak, kulit Ophelia sudah indah, hanya terlalu kelelahan. Bagaimana bisa manusia bekerja tanpa istirahat?“ <i>Clown</i> berdecak, lalu menyambar jubah di kursi.</p>
+
+            <p>“Ketua.“</p>
+
+            <p>Netra kelabu <i>Clown</i> terpejam. Ia mengenali suara itu. “Ada apa, <i>Musician</i>?“</p>
+
+            <p>“Ini sudah terlalu lama,“ tegas <i>Musician</i>. “Kita harus pergi ke kota berikutnya.“</p>
+
+            <p><i>Clown</i> tak melirik. Ia melangkah keluar, namun berhenti sejenak di ambang pintu. “Aku akan mengambil bayarannya saat waktunya tiba. Anggap saja ini waktu istirahat untuk kalian. Nikmati tanpa banyak mengeluh.” Suaranya dingin, meninggalkan <i>Musician</i> dalam keheningan yang mencekam.</p>
+
+            <p>Matahari belum terbit saat <i>Clown</i> bertengger di atap rumah depan kediaman Ophelia. Ia melihat gadis itu keluar dengan kursi rodanya.</p>
+
+            <p>“Kenapa kau tidak istirahat saja, sih?“ <i>Clown</i> menggigit bibir bawahnya. Ada dorongan kuat untuk turun dan membantu mendorong kursi roda itu, namun ia tahu itu akan merusak semua rencananya. Ia terus membuntuti dari bayang-bayang, tak menyadari bahwa dari arah berlawanan, seorang pria tua berjalan sempoyongan menuju rumah Ophelia.</p>
+
+            <p>Di pasar, tenaga Ophelia terkuras habis. Laju kursi rodanya melambat, tangannya gemetar dengan kulit ujung jari yang mengelupas perih. “Aku tidak bisa berhenti di sini ....“ gumamnya, memaksakan diri demi anak-anak panti.</p>
+
+            <p>Saat sampai di rumah, kecemasan menghantamnya. Pintu tidak terkunci. Begitu daun pintu terbuka, bau alkohol bercampur asam dan apek menyerbu indera penciumannya. Ophelia merinding seketika.</p>
+
+            <p>“Kau pulang, anakku?“</p>
+
+            <p>Suara itu membuat Ophelia menegang. Ia memacu kursi rodanya masuk, mengabaikan belanjaannya yang jatuh berserakan. Di pojok ruangan, anak-anak asuhnya meringkuk ketakutan. Ophelia segera menjatuhkan diri dari kursi roda, memeluk mereka dengan protektif.</p>
+
+            <p>Netra <i>crimson</i>-nya menatap nanar pada pria paruh baya yang berdiri sempoyongan itu. Ada balok kayu di tangannya, dengan bercak darah yang menetes.</p>
+
+            <p>“Apa yang kau lakukan?!“ hardik Ophelia. Pupil matanya melebar liar oleh amarah dan ketakutan.</p>
+
+            <p>“Tentu saja mengambil hakku! Berani sekali kau melaporkanku! Kau tahu betapa tersiksanya aku enam bulan di penjara?!“ teriak pria itu sambil melempar balok kayu hingga menghancurkan piring-piring di rak. Suara keramik pecah memicu jerit ketakutan anak-anak.</p>
+
+            <p>Sebelum Ophelia sempat melawan, rambut merah mudanya ditarik dengan kasar. “Dan kau, gadis sialan, kau yang akan membayar semuanya!“</p>
+
+            <p>Tubuh ringkih Ophelia dihempaskan ke samping. Kepalanya berdenyut pusing, namun tatapan nyalangnya tak pudar. “Kau harusnya membusuk di penjara!“</p>
+
+            <p>“Hahaha! Usahamu kurang keras untuk itu, Gadis Cacat!” Pria tua itu tertawa keras, memuaskan dahaganya akan kekuasaan yang sempat hilang selama enam bulan. Ia meludah ke lantai, tepat di depan kursi roda Ophelia yang terbalik. “Ingat, aku akan kembali mengambil semua uangmu nanti!”</p>
+
+            <p>Dengan angkuh, si kepala panti melangkah keluar. Ia menyeka noda darah dari balok kayunya ke celana kumal yang ia pakai. Pikirannya sudah melayang ke kedai minuman terdekat, membayangkan alkohol murahan yang akan membakar tenggorokannya menggunakan sisa uang panti yang akan ia rampas nanti.</p>
+
+            <p>Namun, langkah sempoyongannya terhenti di ambang lorong.</p>
+
+            <p>Dari atas atap, tubuh <i>Clown</i> sempat tersentak. Untuk sesaat, ia mematung—bukan karena takut, tapi karena tidak percaya ada manusia yang berani menyentuh "miliknya" dengan cara seburuk itu. Namun, keheningan itu pecah oleh suara tawa kecil dari balik topengnya. Tawa yang tidak mengandung humor sedikit pun.</p>
+
+            <p><i>Clown</i> melompat turun tanpa suara, mendarat tepat di jalur si kepala panti. Pria tua itu tersentak, matanya yang merah dan liar mencoba fokus pada sosok jangkung berpakaian sirkus yang menghalangi jalannya.</p>
+
+            <p>“Luar biasa,” bisik <i>Clown</i>. Ia melangkah maju, membiarkan wajahnya yang putih bersih terkena cahaya matahari—wajah yang saat ini tampak sangat kesal meski ia sedang tersenyum. “Aku menghabiskan tujuh hari hanya untuk mengagumi ketangguhan kulitnya, dan kau ... kau menghempaskannya seolah dia hanyalah sampah?”</p>
+
+            <p><i>Clown</i> bergerak lebih cepat dari yang bisa ditangkap mata si pemabuk. Dalam sekejap, ia sudah mencengkeram kerah baju si kepala panti, mengangkatnya hingga ujung kaki pria itu berjinjit.</p>
+
+            <p>“Kau bau sekali,” <i>Clown</i> berdesis. Pupil matanya mengecil tajam saat menghirup aroma alkohol yang menguap dari tubuh pria tua itu.</p>
+
+            <p>Tanpa banyak bicara, <i>Clown</i> memberikan "pelajaran". Sebuah tekanan di titik saraf atau mungkin hantaman singkat yang membuat napas si kepala panti putus dan nyalinya menciut. Saat <i>Clown</i> melepaskan cengkeramannya dengan jijik, pria tua itu jatuh tersungkur, gemetar hebat hingga membasahi celananya sendiri.</p>
+
+            <p>Namun, keserakahan di otak si pemabuk ternyata lebih kuat daripada rasa takutnya. Ia merangkak, terbatuk-batuk, dan menatap <i>Clown</i> dengan seringai.</p>
+
+            <p>“Tunggu!” teriak si kepala panti. “Kau... kau menginginkannya, kan? Gadis merah muda itu?”</p>
+
+            <p>Ia tertawa serak, sebuah ide gila muncul. “Bawa saja dia! Kau punya uang, 'kan? Bayar aku dengan harga yang pantas, dan Ophelia jadi milikmu seumur hidup. Kau bisa melakukan apa saja padanya. Aku tidak butuh gadis cacat yang hanya bisa melapor pada polisi.”</p>
+
+            <p>Dunia seolah berhenti berputar bagi <i>Clown</i>. Langkahnya yang hendak pergi terhenti total. Ia memutar kepalanya perlahan, menatap makhluk di bawahnya seolah ia baru saja melihat seonggok daging yang sudah tidak layak hidup. “Membeli? Darimu? Memang siapa dirimu sampai bertingkah seperti pemiliknya? Kau.“ <i>Clown</i> mendekat, ia menginjak tangan tak berdaya itu dan menekannya ke tanah. “Kau hanyalah sampah masyarakat yang tidak tahu diri.“ Ia menendang tubuh si kepala panti dengan kasar.</p>
+
+            <img src="opheliamark.png" alt="Bookmark" class="story-img" style="width: 100px; display: block; margin: 40px auto; box-shadow: none; border: none;">
+                    <p>Ophelia adalah seorang yatim piatu yang ditinggal mati oleh orang tuanya. Tumbuh di panti asuhan yang lebih mirip neraka, ia belajar mandiri sejak jemarinya masih terlalu kecil untuk mengurus diri sendiri. Ia adalah anak yang paling cantik sejak masih kecil. Namun, kecantikannya justru menjadi kutukan. Sejak kecil, ia "dititipkan" di bar atau rumah bangsawan hanya agar si kepala panti yang menyalahgunakan wewenangnya bisa pulang dengan kantong penuh uang untuk membeli alkohol.</p>
+
+            <p>Dengan usaha yang tidak sedikit, Ophelia berhasil memenjarakan si kepala panti. Keberhasilan itu sempat terasa seperti kemerdekaan. Tapi impian itu kini hancur lebur.</p>
+
+            <p>Di lantai rumahnya yang dingin, Ophelia memungut sisa belanjaannya dengan tangis yang ia tahan. Rasa sakit yang selama ini ia kunci seolah mendobrak keluar. Tubuhnya menjerit.</p>
+
+            <p>“Kakak, sudah, biar kami saja. Kakak istirahat saja,” suara kecil adik-adik pantinya memecah kesunyian. Mereka bergegas membantu memunguti bahan makanan yang berserakan.</p>
+
+            <p>Ophelia menggeleng, memaksakan senyum tipis di wajah pucatnya. “Kalian harus sekolah. Pergi bersiap-siaplah, Kakak akan buatkan sarapan,” ujarnya lembut, meski hatinya hancur.</p>
+
+            <p>“Kak. Biarkan kami membantu. Kami juga keluargamu, jangan jadikan kami manusia tidak berguna.” Kalimat itu menghantam Ophelia, membuatnya terdiam seribu bahasa. Ia akhirnya mengangguk perlahan, membiarkan tangan-tangan kecil itu membantunya.</p>
+
+            <p>Siang harinya, rutinitas tetap berjalan seolah tak ada badai yang menerjang. Di gerainya, Ophelia meletakkan kuas. Tangannya gemetar hebat. Ia melewatkan sarapan karena terlambat membuka gerai, dan kini kepalanya tertunduk lemas dengan rambut merah muda yang menutupi wajah.</p>
+
+            <p>“Ophelia?” Suara Amber terdengar khawatir. Sahabatnya itu lekas masuk dan berjongkok di depan kursi roda Ophelia. “Kau pucat sekali.”</p>
+
+            <p>“Aku baik-baik saja...”</p>
+
+            <p>“Kau tidak.” Amber menyodorkan sepotong roti dan segelas air, memaksa Ophelia untuk makan.</p>
+
+            <p>Sambil mengunyah pelan, pertahanan Ophelia runtuh. “Amber ... Sesuatu terjadi ... Kepala panti kembali. Dia ada di rumah saat aku pulang dari pasar pagi tadi.” Suara Ophelia bergetar, bayangan tangan besar yang melayang ke arahnya dulu sekali kembali terputar bagai rol film yang rusak.</p>
+
+            <p>Amber tersentak marah, namun Ophelia segera menahannya agar tidak menarik perhatian orang pasar. Dalam pelukan Amber, Ophelia membisikkan permohonannya, menitipkan anak-anak di tempat Amber. Ia ingin menjauhkan mereka dari monster itu.</p>
+
+            <p>“Kau juga harus menginap di tempatku,” desak Amber.</p>
+
+            <p>Ophelia menggeleng tegas. “Harus ada yang menghentikan orang itu. Dan itu adalah aku. Aku tidak mau mengotori tangan siapa pun.”</p>
+
+            <p>Malam itu, tekadnya sudah bulat. Setelah mengungsikan anak-anak, Ophelia menunggu di ruang tamu. Ia melukis sesuatu yang abstrak—dominasi warna merah pekat dan hitam, seperti firasat akan darah yang akan tumpah.</p>
+
+            <p><i>Krieeet...</i></p>
+
+            <p>Pintu rumah berderit keras. Si kepala panti muncul dengan tubuh sempoyongan dan bau asam yang menyengat. Tanpa peringatan, ia menjambak rambut Ophelia dan menghempaskan tubuh ringkih itu dari kursi roda ke lantai kayu yang keras. Bunyi debuk yang keras bergema di ruang tamu yang sepi. Ophelia meringis, merasakan sensasi panas menjalar di punggungnya, namun tangannya segera bergerak masuk ke balik lipatan gaunnya.</p>
+
+            <p>Jemarinya mencengkeram gagang pisau yang sudah ia siapkan.</p>
+
+            <p>"Kau pikir kau bisa mengusirku dari rumahku sendiri?!" raung si kepala panti, napasnya yang bau alkohol menyapu wajah Ophelia saat ia menindih tubuh gadis itu. Tangannya yang besar dan kasar mulai mencengkeram leher Ophelia, menekan tenggorokannya hingga napas gadis itu terputus-putus.</p>
+
+            <p>"Mati ... kau ... bedebah!" Dengan sisa tenaga, Ophelia menghujamkan pisaunya ke arah dada pria itu.</p>
+
+            <p>Namun, penglihatan Ophelia yang mulai mengabur karena kekurangan oksigen membuatnya meleset. Pisau itu hanya merobek kemeja kusam si kepala panti dan menggores kulit perutnya sedikit. Pria itu tersentak, rasa perih di perutnya justru menyulut kegilaan yang lebih gelap.</p>
+
+            <p>"Kau mencoba membunuhku?!" Pria itu tertawa liar, suara tawanya terdengar seperti gesekan logam karat.</p>
+
+            <p><i>Bugh!</i></p>
+
+            <p>Sebuah pukulan keras menghantam bahu Ophelia. Disusul pukulan lain di tulang rusuknya. Pria itu sengaja menghindari wajah Ophelia. Ingatannya tentang tawaran pada <i>Clown</i> pagi tadi membuatnya sadar bahwa wajah ini adalah modalnya untuk mendapatkan uang. Ophelia hanya bisa mengerang tertahan, air mata tanpa sadar meleleh di sudut netra <i>crimson</i>-nya saat pisaunya terlempar menjauh.</p>
+
+            <p>Tanpa belas kasih, si kepala panti kembali menjambak rambut merah muda Ophelia yang berantakan. Ia menyeret tubuh gadis yang tak berdaya itu di atas lantai kayu, menuju kamar di ujung lorong. Suara gesekan kain di lantai dan derit pintu yang terbuka terdengar sangat memilukan di tengah rumah yang kini tanpa tawa anak-anak. Ophelia dilempar ke dalam kamar, lalu pintu itu dikunci dari luar.</p>
 
             <div class="divider">•••</div>
 
+            <p>Dunia tidak berhenti hanya karena satu jiwa hancur berkeping-keping.</p>
+
+            <p>Ophelia membuka matanya yang sembab. Seluruh tubuhnya terasa kaku dan perih. Memar kebiruan mulai menghias di balik pakaiannya. Dengan gerakan lambat dan menyakitkan, ia merangkak menuju kursi rodanya. Tangannya yang gemetar menarik lengan baju panjang untuk menutupi lebam di lengannya, dan ia memulas bedak tipis untuk menutupi pucat di wajahnya.</p>
+
+            <p>Meski napasnya terasa pendek karena rusuk yang nyeri, Ophelia tetap keluar. Ia harus pergi ke pasar. Ia harus bekerja. Ia harus terlihat "normal" agar Amber tidak curiga dan agar anak-anak tetap merasa aman di tempat pengungsian.</p>
+
+            <p>Saat ia memutar roda kursi rodanya melewati jalanan berbatu yang licin oleh embun pagi, Ophelia tidak menyadari bahwa di balik bayangan gang yang gelap, sepasang mata kelabu sedang mengawasinya. <i>Clown</i> melihat segalanya—cara Ophelia meringis saat menggerakkan bahunya, dan cara gadis itu berpura-pura tegar.</p>
+
+            <p>Dalam hati, pria itu mengutuk dirinya. Ia tak dapat mengawasi Ophelia malam itu, desakan dari seluruh krunya membuat dirinya harus mengurus kondisi kapalnya terlebih dahulu. <i>Clown</i> tak tahu apa yang sebenarnya terjadi. Namun satu hal pasti yang ia tahu, sesuatu yang buruk telah terjadi.</p>
+
+            <p>Pria itu tetap mengikuti Ophelia dengan langkah ringannya. Menekan kuat-kuat amarah yang memuncak di dadanya agar gadis itu tidak menyadari keberadaannya. Kepalanya tertunduk begitu merasakan Ophelia berhenti untuk sekedar mengambil napas. Tangan <i>Clown</i> terkepal erat. Senyum yang tak dapat dijelaskan terlukis di bibirnya. Sepertinya hari ini waktunya, ya?</p>
+
+            <p>Malam itu, hening di panti asuhan terasa mencekam. Di dalam kamarnya, Ophelia tidak meringkuk ketakutan. Dengan tubuh yang nyeri dan tangan yang gemetar, ia justru menjajarkan seluruh jiwanya di atas meja. Lukisan-lukisan dengan warna paling hidup hingga tembikar-tembikar yang ia bentuk dengan peluh. Semuanya tertata rapi, seperti sebuah pameran untuk satu-satunya penonton yang ia tahu akan datang.</p>
+
+            <p><i>Krieeet...</i> Jendela kamar terbuka pelan. Sosok itu masuk dengan gerakan yang terlalu halus untuk seorang manusia.</p>
+
+            <p>"Aku tahu kau di sana," suara Ophelia memecah sunyi. Ia tidak menoleh. "Kau menginginkan bayaran untuk pertunjukanmu, bukan? Ambil semuanya. Ini adalah hal terbaik yang bisa kuberikan."</p>
+
+            <p>Tangannya yang satu lagi tersembunyi di balik gaun, mencengkeram erat gagang pisau. Ia sudah bersiap untuk kemungkinan terburuk. Baginya, <i>Clown</i> adalah misteri yang bisa saja berakhir menjadi monster lain.</p>
+
+            <p><i>Clown</i> melangkah mendekat. Bukannya menyentuh karya-karya indah itu, netra kelabunya justru terpaku pada lengan baju Ophelia yang sedikit tersingkap, memperlihatkan lebam kebiruan yang kontras dengan kulit pucatnya. <i>Clown</i> terdiam. Atmosfer di ruangan itu mendadak berubah menjadi sangat berat.</p>
+
+            <p>Dengan gerakan yang tidak terduga, <i>Clown</i> mendekat hingga wajah mereka hampir bersentuhan. Ia menatap Ophelia dengan binar kekaguman yang begitu murni, seolah sedang melihat rembulan yang jatuh ke bumi.</p>
+
+            <p>Ophelia tersentak. Tatapan itu... ia pernah melihatnya berkali-kali dari pria-pria di bar. Rasa jijik dan amarah membuncah. Saat jemari <i>Clown</i> hendak menyentuhnya, Ophelia mengayunkan pisaunya dengan segenap tenaga.</p>
+
+            <p>"Jangan berani-berani menyentuhku!" geram Ophelia.</p>
+
+            <p>Namun, <i>Clown</i> jauh lebih cepat. Ia menangkis pisau itu tanpa melukai Ophelia sedikitpun, lalu berbisik tepat di telinga Ophelia. Suaranya terdengar sedih, penuh kasih sayang yang justru terasa salah. "Sangat disayangkan... mahakarya sepertimu harus retak di tangan tangan-tangan kasar itu. Tidurlah, Ophelia. Biarkan aku membawamu ke tempat di mana tak ada yang bisa merusakmu lagi."</p>
+
+            <p>Sebuah aroma manis menyergap indra penciuman Ophelia. Seketika, rasa lelah yang luar biasa dan rasa lega yang terasa ganjil menghantamnya. Dunianya menjadi gelap saat ia jatuh ke pelukan <i>Clown</i>.</p>
+
+            <p><i>Clown</i> menggendongnya keluar dengan hati-hati. Di ruang tamu, si kepala panti sudah menunggu dengan mata yang haus akan koin emas. "Mana uangnya?! Bayar aku, dan ambil jalang itu!"</p>
+
+            <p><i>Clown</i> menatap pria itu dengan rasa jijik. Tanpa sepatah kata pun, ia melemparkan sebuah kantong berat yang berdenting nyaring. Tanpa menunggu, <i>Clown</i> melangkah keluar menembus kegelapan malam dengan Ophelia di pelukannya.</p>
+
+            <p>Di dalam rumah, si kepala panti tertawa rakus sambil membuka ikatan kantong itu. Namun, bukan emas yang ia temukan. Sesuatu meledak kecil di wajahnya, menyebarkan kabut hijau yang menyesakkan. Pria itu tersedak, mencakar tenggorokannya sendiri saat racun itu mulai membakar paru-parunya perlahan, meninggalkannya dalam penderitaan yang panjang di tengah kesunyian panti yang kini kosong.</p>
+
+            <img src="opheliamark.png" alt="Bookmark" class="bookmark-img">
+
+            <p>Ophelia terbangun dengan sensasi asing yang menjalar di sekujur tubuh. Tidak ada lagi bau asam alkohol yang menyengat, tidak ada lagi suasana apek dan dingin yang biasanya membuatnya menggigil. Saat mencoba bergerak, tubuh yang sebelumnya terasa remuk kini jauh lebih ringan. Alih-alih dipan kayu yang keras dan kasar, ia justru merasakan kelembutan sutra yang menopang punggungnya. Untuk pertama kalinya, napas Ophelia tidak terasa sesak.</p>
+
+            <p>Pandangannya masih buram. Ia memejamkan mata sejenak, meresapi hangat dan halusnya ranjang yang ia tempati. Sesuatu yang terasa sangat ganjil. Namun, saat kesadarannya pulih sepenuhnya, rasa nyaman itu seketika menguap, berganti dengan kecemasan yang dingin. Ia menatap sekeliling, kemewahan yang mengepungnya jelas bukan berasal dari kamar pantinya yang kumuh.</p>
+
+            <p>“Di mana ini?” suaranya memecah kesunyian, gemetar dan rapuh.</p>
+
+            <p>Tiba-tiba, pintu terbuka tanpa suara derit yang menyakitkan. Ophelia memaksa tubuhnya duduk, menyeret dirinya menjauh saat sosok pria berambut <i>raven</i> dengan helaian putih di bagian depan muncul di ambang pintu. Itu adalah <i>Clown</i>. Namun, kali ini auranya berbeda, tidak ada tekanan menusuk yang biasanya mengintainya dari kegelapan. Pria itu justru tersenyum ringan, sebuah senyuman yang bagi Ophelia terasa seperti pertanda buruk.</p>
+
+            <p>“Ophelia, sayangku, kau sudah bangun ternyata?” Langkah laki-laki itu begitu ringan, tak ada suara yang timbul disetiap langkahnya.</p>
+
+            <p>Tangan Ophelia meraba sekitar, mencari benda apa pun yang bisa dijadikan senjata. Namun, <i>Clown</i> terkekeh menyadari kepanikannya. Ia mendekat, lalu duduk di ujung ranjang dengan tenang. “Tidak ada yang bisa kau jadikan senjata, Sayang. Aku tidak mungkin membiarkanmu menyentuh benda tajam yang bisa melukai kulit indahmu.”</p>
+
+            <p><i>Clown</i> mengulurkan tangan. Ophelia memalingkan wajah, namun <i>Clown</i> lebih cepat. Jemari dingin pria itu mencengkeram pipinya, memaksa wajah cantik itu menghadapnya. “Menyenangkan sekali melihat ronamu mulai kembali. Ah, ternyata kulitmu memang sepucat <i>porselen</i>,” bisik <i>Clown</i> penuh perhatian, namun kata-katanya terasa seperti sayatan pisau di telinga Ophelia.</p>
+
+            <p>“Kenapa aku di sini? Di mana ini?” tuntut Ophelia.</p>
+
+            <p>“Di mana? Tentu saja di tempat kau akan tinggal bersamaku.”</p>
+
+            <p>“Tinggal? Tidak! Aku tidak mau! Aku masih punya anak-anak panti yang harus kuurus!”</p>
+
+            <p>Mendengar itu, <i>Clown</i> menarik dagu Ophelia dengan kasar. Netra kelabunya menyorot tajam ke dalam netra <i>crimson</i> Ophelia yang bergetar. “Kau akan tinggal bersamaku mulai sekarang. Tidak ada bantahan,” desisnya tegas. “Mahakarya sepertimu tidak cocok berada di dunia luar, bekerja keras sampai kau rusak.”</p>
+
+            <p><i>Clown</i> mengelus pipi Ophelia, lalu menempelkan kening mereka. “Mulai sekarang, hanya aku yang akan menjagamu.”</p>
+
+            <p>Sebelum Ophelia sempat memprotes, <i>Clown</i> membungkam bibirnya. Rasa manis yang ganjil menyusup masuk, memenuhi rongga mulutnya. Ophelia terbelalak kaget, tubuhnya kaku saat tangan <i>Clown</i> mencengkeram tengkuknya, memperdalam ciuman itu. <i>Clown</i> melumat bibirnya dengan posesif, menghisapnya pelan seolah sedang mencicipi <i>porselen</i> paling berharga, mengabaikan fakta bahwa gadis di bawahnya tidak memberikan balasan sama sekali.</p>
+
+            <p>Dengan sisa tenaga Ophelia yang belum pulih sepenuhnya, gadis itu mendorong mendorong tubuh <i>Clown</i>. Napasnya memburu, naik-turun dengan cepat dan pendek. Jemari meremas seprai sutra di bawahnya hingga kusut.</p>
+
+            <p>“A-aku ingin pergi ... Izinkan aku pergi ....” Isak tangis mulai mewarnai suaranya yang parau. “A-aku akan memberikan apa pun yang kau mau. Ka-kau menginginkan karyaku, bukan? Lu-lukisan... tembikar ... aku akan berikan semuanya!” Netra <i>crimson</i>-nya mulai berkaca-kaca, memerangkap genangan air mata yang siap tumpah. “Kumohon ... Izinkan aku pergi.” Ophelia menyatukan kedua tangannya di depan dada, memohon dengan kepala tertunduk dalam—sebuah gestur keputusasaan yang murni.</p>
+
+            <p>Wajah <i>Clown</i> mendadak datar. Ia memiringkan kepalanya sedikit, menatap Ophelia seolah-olah gadis itu baru saja mengucapkan sesuatu yang tidak masuk akal. “Kata siapa aku menginginkan karyamu?”</p>
+
+            <p>Ophelia mendongak dengan netra yang bergetar hebat. Tangan <i>Clown</i> yang terbalut sarung tangan hitam kembali menggapai pipinya, membelainya dengan saksama.</p>
+
+            <p>“Kaulah mahakarya itu, Ophelia. Semua karyamu memang indah dan berharga, aku mengakuinya. Tapi tidak ada yang lebih berharga daripada dirimu sendiri. Semua keindahanmu ...” <i>Clown</i> tersenyum saat ibu jarinya mengusap lembut bagian bawah mata Ophelia. Sebuah senyuman yang menyebarkan kengerian, senyum yang haus akan kepemilikan mutlak. “Bagaimana bisa ada manusia seindah dirimu? Kau bagai <i>porselen</i>—indah, rapuh, dan memabukkan.”</p>
+
+            <p>Tubuh Ophelia gemetar hebat. Bayangan masa lalu saat ia mencoba lari dari kejaran orang-orang yang hendak melecehkannya mendadak berkelebat, menghantam kesadarannya. Dalam kepungan trauma itu, ia kembali memohon dengan suara yang nyaris hilang. “Ku-kumohon, lepaskan aku ... Ka-kalau kau memang ingin... ber-setubuh denganku ... a-akan kulakukan ... Ta-tapi biarkan aku keluar ... Biarkan aku bebas ...”</p>
+
+            <p><i>Clown</i> sontak menjauhkan tubuhnya. Ia menatap Ophelia dengan tatapan kosong yang dingin. “Sudah kubilang, aku tidak akan melepaskanmu!”</p>
+
+            <p>Sentakan suara itu membuat Ophelia tersentak hebat. Ia segera menutupi telinganya, meringkuk rapat sambil menggumamkan kata maaf yang terputus-putus. Tatapan matanya mendadak kosong, sementara keringat dingin mulai membasahi kulitnya yang pucat.</p>
+
+            <p><i>Clown</i> memejamkan mata, tangannya terkepal erat hingga sarung tangannya berderit. Ia menarik napas panjang, mencoba meredam amarah yang sempat meledak. Ia kembali mendekati Ophelia, kali ini memeluk tubuh gadis itu dengan sangat lembut, begitu hati-hati, seakan takut tubuh yang nyaris rusak itu akan hancur berkeping-keping dalam dekapannya.</p>
+
+            <p>“Maafkan aku. Aku tidak bermaksud membentakmu,” bisik <i>Clown</i>, suaranya kini sehalus beludru di telinga Ophelia.</p>
+
+            <p><i>Clown</i> menangkup wajah Ophelia, memaksanya untuk saling bertatap. “Lihat aku, Ophelia. Aku tidak akan marah padamu, asal kau tidak membahas soal pergi dariku lagi. Paham, 'kan?”</p>
+
+            <p>Ophelia hanya bisa mengangguk pelan dalam cengkeraman ketakutan. Pria itu kembali mendekapnya, kali ini lebih erat namun tetap terasa protektif. “Sayangku, Ophelia-ku ... Aku akan menjagamu. Kau hanya perlu hidup untukku mulai sekarang.”</p>
+
+            <p>Ophelia tidak merasa tenang sedikit pun. Kenangan buruk dan rasa was-was bercampur aduk, melumpuhkan logikanya. Ia hanya bisa gemetar dalam diam, dengan tatapan yang benar-benar kosong menatap dinding kamar yang mewah. Penjara barunya yang indah.</p>
+
+            <div class="divider">•••</div>
+            <p>Hening adalah suara yang paling menyakitkan bagi Ophelia.</p>
+
+            <p>Sudah berapa lama ia berada di kamar ini? Ia tidak tahu pasti. Waktu di sini tidak diukur dengan terbitnya matahari, melainkan dengan seberapa sering pintu besar tanpa derit itu terbuka. Kamar ini adalah kebalikan dari panti asuhan tempatnya tumbuh. Jika dulu ia tidur di atas dipan kayu lapuk dengan bau apek yang mencekik, kini ia tenggelam dalam lautan sutra berwarna krem yang begitu lembut hingga kulitnya yang lebam merasa tidak pantas menyentuhnya. Namun, kemewahan ini tidak menyembuhkan, ia justru menindih.</p>
+
+            <p>Ophelia mencoba menyeret tubuhnya dari tempat tidur. Tanpa kursi roda, dunia terasa begitu luas dan tidak terjangkau. Lututnya bergesekan dengan karpet Persia yang tebal saat ia berusaha menuju pintu. Setiap jengkal tarikan tubuhnya terasa seperti penghinaan terhadap martabatnya. Ia memukul pintu kayu itu, kuku-kukunya mencakar permukaan yang halus tanpa goresan sedikit pun.</p>
+
+            <p>"Ada orang di sana? Tolong! Amber! Anak-anak!" suaranya parau, pecah di tengah ruangan yang kedap suara. Tidak ada jawaban. Hanya detak jam dinding berlapis emas yang mengejek setiap detik keputusasaannya.</p>
+
+            <p>Lalu, <i>Clown</i> datang.</p>
+
+            <p>Pria itu selalu muncul dengan keanggunan yang tidak dapat dijelaskan. Hari itu, ia tidak datang dengan tangan kosong. Beberapa pelayan yang tampak seperti boneka tanpa ekspresi mendorong masuk sebuah meja lukis dari kayu jati murni, set kanvas linen yang belum tersentuh, dan tanah liat yang didatangkan dari tanah yang jauh. <i>Clown</i> berdiri di sana, rambut <i>raven</i> dengan helaian putihnya tampak berkilau di bawah cahaya lampu kristal.</p>
+
+            <p>"Aku membawakanmu duniamu, Ophelia," bisikya. Suaranya sehalus beludru, namun memiliki ketajaman yang tersembunyi. "Kau ingin berkarya, bukan? Lukislah keindahan yang kau lihat di sini. Jadikan aku subjekmu, dan kau tidak akan pernah kekurangan apa pun."</p>
+
+            <p>Ophelia hanya menatap peralatan itu dengan pandangan kosong. Bagaimana bisa ia melukis keindahan di dalam penjara? Ia melukis, ya, namun tangannya hanya mampu menggoreskan warna-warna kelabu dan merah tua. <i>Clown</i> tidak marah. Ia justru mengagumi setiap guratan emosional itu. Ia akan duduk berjam-jam di sudut ruangan, memperhatikan Ophelia bekerja, menatap punggung gadis itu dengan lapar.</p>
+
+            <p>Keintiman yang dipaksakan itu mulai merayapi kewarasan Ophelia. Ia merasa mulai terbiasa dengan sentuhan tangan <i>Clown</i> yang bersarung tangan saat menggantikan gaunnya. <i>Clown</i> akan memandang tubuh telanjang Ophelia dengan pandangan seorang kurator seni yang melihat patung yang paling berharga. Ia mencumbu Ophelia di bawah cahaya temaram, sebuah perpaduan antara pemujaan dan penjarahan yang membuat Ophelia merasa dirinya perlahan menghilang, digantikan oleh identitas baru: Properti <i>Clown</i>.</p>
+
+            <p>Tahun-tahun berlalu, dan Ophelia merasa jiwanya mulai membusuk di dalam emas yang mengurungnya. "Kapan aku bisa keluar?" tanya Ophelia setiap malam. "Hanya satu jam, biarkan aku melihat langit yang asli."</p>
+
+            <p>"Kau adalah langitku, Ophelia. Di luar sana hanya ada kotoran yang akan merusakmu," jawab <i>Clown</i> dingin.</p>
+
+            <p>Ketegangan itu memuncak suatu sore. Ophelia sedang membentuk tembikar, jari-jarinya yang gemetar membuat pisau ukir tergelincir, menyayat telapak tangannya. Darah merah segar menetes ke atas tanah liat yang putih. <i>Clown</i>, yang sedang mengamati, mendadak bangkit. Ia melihat luka itu dengan tatapan benci, bukan pada Ophelia, tapi benci pada fakta bahwa mahakaryanya memiliki cacat.</p>
+
+            <p>Di ruang kerjanya yang gelap, <i>Clown</i> menatap permata <i>Lepidolite</i> miliknya. Permata itu berkilauan dengan cahaya ungu yang mistis, yang konon menyimpan kekuatan untuk mengikat dua jiwa dalam keabadian. Obsesinya mencapai titik didih. Manusia akan menua, manusia akan terluka, manusia akan mati. Tapi sebuah mahakarya yang dipadukan dengan permata abadi akan hidup selamanya.</p>
+
+            <p>Malam itu, <i>Clown</i> membawa tas instrumen bedah. Ia tidak lagi tersenyum. Ia membius Ophelia dengan aroma manis yang mematikan. Dalam kegelapan kamar yang sunyi, ia memulai operasi keji itu. Dengan ketelitian seorang ahli, ia mengeluarkan mata kiri Ophelia yang berwarna <i>crimson</i>. Sebagai gantinya, ia menanamkan batu <i>Lepidolite</i> yang telah ia rendam dalam darahnya sendiri—sebuah kontrak darah yang tidak bisa diputuskan oleh maut sekalipun.</p>
+
+            <p>Saat fajar menyingsing, Ophelia tidak lagi sepenuhnya manusia. Ia telah resmi menjadi koleksi paling berharga di galeri kegilaan <i>Clown</i>.</p>
+
+            <img src="opheliamark.png" alt="Bookmark" class="bookmark-img">
+
+            <p>Suara dengung mesin kapal terbang yang menyala nyaring bagai alarm di telinga sang gadis merah muda. Matanya masih terpejam erat, alisnya mengerut. Ia tidak nyaman. Tangannya meremas sprei di bawahnya. Rasa dingin menyebar di sebagian wajahnya, namun matanya terasa sulit untuk terbuka.</p>
+
+            <p>Ophelia gelisah, remasan pada sprei dibawahnya semakin menguat. Matanya tak kunjung terbuka, sementara deru jantungnya semakin menguat. Seolah sedang mendapatkan mimpi buruk, Ophelia terlonjak, ia duduk. Langsung terbangun dari tidurnya yang tidak nyaman. Tubuhnya gemetar, matanya terbuka lebar, deru napasnya tersengal-sengal.</p>
+
+            <p>Aneh. Itu yang dirasakan gadis itu. Rasa dingin kembali menjalar, kali ini terasa lebih intens. Gadis itu mencoba memfokuskan pandanganny, namun nihil, pandangannya masih kabur.</p>
+
+            <p>"Kau akhirnya bangun, sayang. Bagaimana? Kau menyukai mata barumu?"</p>
+
+            <p>Kalimat <i>Clown</i> menghantamnya. Dengan jemari gemetar, ia meraba pipinya sendiri. Dingin. Tangannya terus merayap naik hingga menyentuh rongga mata kiri yang terasa asing—sekeras batu dan sedingin es.</p>
+
+            <p>Di hadapannya, <i>Clown</i> duduk dengan tenang, mengamati bagaimana reaksi Ophelia, seolah melihat sekuntum mawar yang sedang mekar di dalam vas emas. Senyum <i>Clown</i> mengembang dengan kepuasan.</p>
+
+            <p>"Kenapa?" Lirih Ophelia. Suaranya pecah. Netra merah itu melihat <i>Clown</i> penuh kebencian. "Kenapa kau tidak mengambil nyawaku saja?"</p>
+
+            <p><i>Clown</i> bangun, mencondongkan tubuhnya. Tangannya yang dibalut sarung tangan hitam membelai pipi pucat Ophelia, tepat di bawah mata merahnya. Seringai masih tak melepas dari bibirnya. Netra kelabu itu mengunci jemari Ophelia yang mencoba menyembunyikan 'karya'-nya. Dengan gerakan lembut namun memaksa, <i>Clown</i> menyingkirkan tangan itu, mengekspos mata yang tak lagi bisa berkedip sama dengan mata sebelahnya. "Karena nyawamu akan binasa. Apa kau tau seberapa rapuhnya manusia? Waktu selalu menjadi pencuri paling kejam. Kulit mereka akan mengkerut, mata mereka akan redup seiring bertambahnya manusia." Pria dengan sedikit helaian putih di rambutnya mengelus bawa mata yang keras. <i>Lepidolite</i> yang terlihat indah namun juga dingin. "Akhirnya, semua kecantikanmu ini akan memudar dan menyatu dengan tanah yang kotor."</p>
+
+            <p>Netra kelabu itu beralih ke arah meja. Menunjuk sebuah tabung yang berada di atas sana, tabung yang terlibat begitu cantik dengan aksen keemasan berupa akar, lalu di dalamnya terdapat altar dan ... Bola mata dengan pupil merah <i>crimson</i> milik si gadis!</p>
+
+            <img src="crimsonophelia.png" alt="Crimson Eye in Jar" class="story-img" style="width: 250px; display: block; margin: 30px auto;">
+
+            <p>"Mata itu ... Mata itu telah aku selamatkan dari waktu. Sekarang, salah satu bagian dari dirimu akan selalu ada bersamaku, dengan kilau dan binar yang tak pernah bilang, sesuatu yang sama, seperti saat aku pertama kali melihatmu di pasar." <i>Clown</i> melihat Ophelia dan mengelus bagian mata kirinya. "Dan permata ini?"</p>
+
+            <p>Pria itu mengecup mata kiri itu untuk waktu yang lama, tangannya merengkuh tubuh Ophelia yang lebih kecil dari dirinya. "Ini hadiah dariku. Permata ku yang paling berharga, dan bukan hanya sekedar permata." <i>Clown</i> tersenyum, ia berbisik di telinga Ophelia dengan suara rendahnya. "Ini adalah pengikat kita, sayang. Sebuah tanda, kalau kita akan bersama selamanya, dan saling berbagi apapun yang kita rasakan. Selamat datang di duniaku, Ophelia. Mulai sekarang, kau adalah bagian dari keabadikanku."</p>
+
+            <p>Tubuh Ophelia gemetar hebat. Meski rada dingin dan nyeri di mata kirinya masih terasa begitu asing untuknya, ia mendorong tubuh <i>Clown</i> sekuat tenaga. Natra <i>crimson</i>-nya melihat dengan berang. "Kau iblis." Ophelia mendesis.</p>
+
+            <p>"Kau mungkin bisa mengambil mataku. Tapi sayang ... <i>Clown</i>, kau tidak akan pernah bisa mengubah pandanganku tentangmu. Dimataku, kau adalah monster, kau adalah iblis yang busuk. Tidak peduli ..." Ophelia memejamkan mata, napasnya terasa berat. Namun tatapan yang ia keluarkan sekali lagi, justru semakin tajam. "Tidak peduli seindah apapun permata yang kau berikan padaku, kau tidak bisa mengubah apapun dariku."</p>
+
+            <p><i>Clown</i> mengatupkan mulutnya dan tertawa. "Ya. Sayang, kau benar! Aku adalah iblis!" <i>Clown</i> mengelus pinggiran mata yang keras itu dengan takzim. "Karena aku memang iblis yang datang untuk memilikimu." Bisikan <i>Clown</i> terdengar pelan, begitu pelan sampai hampir tak terdengar, namun selalu meninggalkan rasa dingin. Ophelia tidak berpaling. Ia membiarkan napas panas pria itu menyentuh wajahnya, namun netra merahnya yang asli menghunus tepat ke bola mata kelabu di hadapannya—sebuah tatapan yang penuh dengan janji untuk melihat hari di mana <i>Clown</i> hancur, bahkan jika ia harus melihatnya dengan mata pemberian sang monster.</p>
+
+            <div class="divider">•••</div>
+            <p>Penyesuaian mata <i>Lepidolite</i> itu adalah proses penyiksaan yang lambat. Selama berminggu-minggu, Ophelia terkurung dalam siklus migrain yang hebat. Batu itu, benda mati yang dingin, seolah mencoba mengakar ke dalam otaknya, mencari celah untuk menyatu dengan urat sarafnya.</p>
+
+            <p>Mata itu terus berdenyut. Deg, deg, deg. Bukan detak jantung Ophelia, melainkan detak jantung <i>Clown</i> yang seolah ditanamkan paksa di sana.</p>
+
+            <p>Horor yang sebenarnya terjadi saat malam pertunjukan <i>Twilight Troupe</i> kembali digelar. Ophelia sedang berbaring, mencoba memejamkan kedua matanya untuk mencari sedikit ketenangan, namun kegelapan tidak kunjung datang bagi mata kirinya. Tiba-tiba, penglihatannya tersentak. Saraf matanya seolah ditarik paksa keluar dari tengkorak.</p>
+
+            <p>Ia tidak lagi melihat langit-langit kamarnya. Lewat mata <i>Lepidolite</i> itu, ia melihat kerumunan orang yang bersorak-sorai di bawah sana. Ia melihat cahaya lampu sorot yang menyilaukan, memantul pada kain tenda sirkus yang raksasa. Ia merasakan angin kencang menerpa wajahnya. Ia merasakan besi dingin di telapak tangannya.</p>
+
+            <p>Ia sedang berdiri di atas seutas tali tipis di ketinggian lima puluh kaki.</p>
+
+            <p>Ophelia terengah-engah di atas ranjangnya, namun batinnya sedang berada di tengah atraksi maut <i>Clown</i>. Ia merasakan ketakutan <i>Clown</i>. Bukan ketakutan akan kematian, melainkan ketakutan akan ketidaksempurnaan. Ia merasakan debaran jantung <i>Clown</i> yang menggila, sebuah ritme liar yang memacu adrenalin hingga titik tertinggi. Setiap kali <i>Clown</i> melompat atau melakukan gerakan berbahaya, mata kiri Ophelia meledak dalam rasa sakit yang luar biasa. Ia merasakannya seolah-olah bola mata itu sedang diremas oleh tangan raksasa.</p>
+
+            <p>Di pusat arena, <i>Clown</i> sedang melakukan aksi salto maut tanpa jaring pengaman. Saat ia berada di udara, ia bisa merasakan jeritan batin Ophelia. Ia merasakan getaran ketakutan gadis itu yang mengalir lewat koneksi permata <i>Lepidolite</i>. Dan itu membuatnya gila. Benar-benar gila. <i>Clown</i> tertawa histeris di tengah udara, sebuah tawa yang terdengar mengerikan bagi penonton, namun bagi <i>Clown</i>, itu adalah melodi penyatuan. Semakin besar rasa sakit yang dirasakan Ophelia di kamarnya, semakin lincah <i>Clown</i> bergerak di panggung. Rasa sakit itu adalah bahan bakar estetikanya. Ia tidak lagi bermain untuk penonton; ia bermain untuk menyiksa "mahakarya"-nya yang sedang terbaring lemah.</p>
+
+            <p>Setelah pertunjukan berakhir, aura <i>Clown</i> yang penuh kemenang mulai merayap masuk ke dalam kamar sebelum sosoknya benar-benar muncul. Ophelia bisa merasakannya. Lewat mata permata itu, ia merasakan kepuasan yang ganjil, sebuah energi gelap yang mendekat melalui lorong-lorong rumah. Ketakutan Ophelia memuncak. Ia mencoba turun dari tempat tidur, merayap menuju sudut ruangan yang paling gelap, namun langkah kaki <i>Clown</i> terdengar seperti dentuman lonceng kematian di telinganya.</p>
+
+            <p>Pintu terbuka. <i>Clown</i> masuk dengan riasan panggung yang masih menempel di wajahnya. Matanya yang kelabu berkilat penuh gairah yang tidak sehat.</p>
+
+            <p>"Kau merasakannya tadi, bukan, Ophelia? Kau bersamaku di atas sana," bisiknya, suaranya dipenuhi euforia.</p>
+
+            <p><i>Clown</i> mendekat, mengabaikan getaran hebat di tubuh Ophelia. Ia berlutut di depan gadis itu, menangkup wajahnya dengan kasar. Ia menatap mata <i>Lepidolite</i> itu dengan pemujaan yang meluap-luap. Baginya, mata ungu itu kini jauh lebih indah karena ada bagian dari dirinya di sana.</p>
+
+            <p>Tanpa memedulikan penolakan Ophelia, <i>Clown</i> mulai mencumbu gadis itu. Tidak ada lagi sisa-sisa kelembutan yang dulu pernah ia tunjukkan. Cumbuan itu penuh paksaan, kasar, dan menghina. <i>Clown</i> ingin Ophelia merasakan setiap inci kepemilikannya. Saat <i>Clown</i> mencengkeram bahu Ophelia hingga lebam, ia merasa senang karena ia tahu Ophelia merasakannya dua kali lipat—melalui kulitnya dan melalui mata batinnya. Ophelia mencoba mendorong, mencoba mencakar, namun tenaganya seperti debu di depan badai. Ia hanya bisa menangis dalam diam sementara <i>Clown</i> menjarah tubuhnya, merayakan kemenangannya atas kemanusiaan Ophelia.</p>
+
+            <p>Keesokan harinya, keputusasaan itu menemukan puncaknya di depan kanvas.</p>
+
+            <p>Ophelia, dengan sisa-sisa harga diri yang ada, mencoba mengambil kuasnya kembali. Ia berpikir, jika ia bisa melukis, ia mungkin bisa mempertahankan kewarasannya. Namun, saat kuas menyentuh kanvas, ia tersentak.</p>
+
+            <p>Dunia di matanya tidak lagi sinkron. Mata kanannya melihat warna merah yang nyata, namun mata kirinya mengubah merah itu menjadi warna ungu mati yang berlumpur. Persepsi matanya hancur total. Setiap kali ia mencoba menarik garis lurus, garis itu terlihat miring di penglihatannya. Ia mencoba melukis wajah Amber atau anak-anak panti, namun yang muncul di kanvas adalah bentuk-bentuk abstrak yang mengerikan dan terdistorsi.</p>
+
+            <p>Ia beralih ke tanah liat. Jemarinya yang biasanya peka kini terasa kebas. Ia tidak bisa lagi merasakan tekstur kehalusan material itu. Tembikar yang ia buat tidak lagi memiliki garis yang anggun. Semuanya terlihat berat di satu sisi, cacat, dan penuh retakan. Setiap kali ia mencoba memperbaiki bentuknya, mata <i>Lepidolitenya</i> berdenyut, mengirimkan kilatan cahaya yang mengacaukan konsentrasinya.</p>
+
+            <p>"Tidak ... tidak begini ... ini bukan karyaku!" tangis Ophelia pecah.</p>
+
+            <p>Ia melihat karyanya yang sekarang dan merasa jijik. Mahakarya yang dulu ia banggakan telah hilang. Bakatnya, jiwanya, identitasnya sebagai seniman telah dicuri oleh permata di matanya. Ia menyadari bahwa ia bukan lagi pencipta; ia hanyalah sebuah kanvas kosong yang kini telah dicorat-coret secara permanen oleh <i>Clown</i>.</p>
+
+            <p>Rasa frustasi itu berubah menjadi kebencian yang mendalam—kepada <i>Clown</i>, dan terutama kepada dirinya sendiri. Setiap kali <i>Clown</i> mendekat, Ophelia akan melawan dengan sisa tenaganya, hanya untuk dijatuhkan kembali ke lantai. Ia mulai merasa bahwa hidup dalam kegelapan abadi jauh lebih baik daripada melihat dunia yang cacat lewat mata pemberian <i>Clown</i>. Harapan yang tadinya ia pupuk untuk melarikan diri kini layu. Jika ia keluar dari sini, ia tetap akan membawa "<i>Clown</i>" di dalam matanya.</p>
+
+            <p>Ophelia jatuh dalam titik nadir putus asa. Ia menatap puing-puing tembikarnya yang hancur di lantai, menyadari satu kebenaran yang pahit: Satu-satunya cara untuk menghancurkan karya <i>Clown</i> adalah dengan menghancurkan dirinya sendiri.</p>
+
+            <img src="opheliamark.png" alt="Bookmark" class="bookmark-img">
+
+            <p>Malam itu adalah malam pertunjukan terbesar dalam sejarah <i>Twilight Troupe</i>. Di alun-alun kota, ribuan mata tertuju pada panggung yang bermandikan cahaya obor. Namun, di dalam kamar mewah yang menjadi penjara emasnya, Ophelia merasakan maut sedang berdansa di dalam sarafnya.</p>
+
+            <p>Di luar sana, <i>Clown</i> sedang melakukan aksi paling ekstrem: berjalan di atas tali yang terbakar, ratusan kaki di atas tanah tanpa pengaman. Melalui mata <i>Lepidolite</i> itu, Ophelia tidak lagi melihat dinding kamarnya. Ia melihat api yang menjilat-jilat di bawah kakinya, ia merasakan panas yang membakar telapak kakinya, dan ia merasakan angin kencang yang berusaha menjatuhkannya. Rasa sakit di kepalanya mencapai titik puncak; rasanya seolah-olah otak kirinya sedang dibakar hidup-hidup oleh permata itu.</p>
+
+            <p>Ophelia terjatuh dari tempat tidur, tubuhnya yang lemah menyeret dirinya di atas karpet Persia menuju pintu kayu yang kokoh. Ia memukul pintu itu dengan sisa tenaganya yang terakhir, kuku-kukunya pecah meninggalkan jejak darah di permukaan kayu yang mengilap.</p>
+
+            <p>"Tolong! Seseorang ... hentikan ini! Tolong aku!" teriaknya parau, namun suaranya tenggelam oleh sorak-sorai penonton yang bergema di kejauhan melalui koneksi batin dengan <i>Clown</i>. Ia memegang kepalanya, meringkuk, merasa seolah tengkoraknya akan pecah menjadi serpihan.</p>
+
+            <p>Di tengah keputusasaan itu, matanya menangkap sesuatu di bawah meja kerjanya. Sebuah gelas kaca yang terjatuh semalam dan pecah menjadi serpihan-serpihan tajam yang berkilauan. Ophelia merangkak, jemarinya yang gemetar menggapai serpihan terbesar. Tanpa ragu, ia menyayat lengan bawahnya.</p>
+
+            <p><i>Srettt.</i></p>
+
+            <p>Rasa sakit yang tajam dan nyata itu justru membuatnya menarik napas lega. Untuk sesaat, rasa sakit fisik itu mengalihkan fokus otaknya dari denyutan mata <i>Lepidolite</i>. Ophelia menyadari sesuatu yang krusial: <i>Clown</i> bisa merasakannya. Lewat mata itu, ia bisa merasakan <i>Clown</i> di atas tali sana tersentak, langkahnya goyah sejenak.</p>
+
+            <p>Ophelia tertawa. Sebuah tawa yang pecah dan gila. "Kau merasakannya, <i>Clown</i>? Kau merasakannya?!"</p>
+
+            <p>Ia kembali menyayat kulitnya, lebih dalam, lebih banyak. Ia mengukir luka di atas luka. Ia ingin <i>Clown</i> tenggelam dalam rasa sakit yang sama dengannya. Di atas panggung, <i>Clown</i> mulai merasa ganjil; adrenalinnya bercampur dengan rasa perih yang tiba-tiba muncul di seluruh tubuhnya. Gerakannya yang biasanya mulus menjadi tersendat. Ia mulai kehilangan kendali atas pertunjukannya sendiri.</p>
+
+            <p>Ophelia kini berdiri di depan cermin besar berbingkai emas. Wajahnya pucat pasi, namun matanya—mata kanannya yang merah karena tangis dan mata kirinya yang ungu karena sihir—menatap bayangannya sendiri dengan kebencian yang murni. Ia mengarahkan serpihan kaca yang berlumuran darah itu ke mata kanannya yang masih tersisa, mata <i>crimson</i> yang selama ini dipuja <i>Clown</i>.</p>
+
+            <p>"Karena mata ini ... karena mata ini kau mengurungku. Karena keindahan ini kau merusak jiwaku," bisik Ophelia, suaranya kini tenang namun mematikan. "<i>Clown</i>, jika kau sangat mengagumi mataku ... maka aku akan memberikan kehancurannya padamu!"</p>
+
+            <p><i>Jleb!</i></p>
+
+            <p>Ophelia menusukkan kaca itu ke matanya sendiri. Jeritannya yang memekakkan telinga meledak di dalam kamar sunyi itu, namun di saat yang sama, ia tertawa histeris. Darah segar menyembur, membasahi wajahnya, mengalir ke gaun sutranya yang putih. Di panggung sirkus, <i>Clown</i> terjatuh tepat saat ia hendak mencapai ujung tali. Ia mengerang, mencengkeram wajahnya yang mendadak terasa seperti ditusuk ribuan jarum panas. Penonton berteriak ketakutan saat melihat sang bintang jatuh, namun <i>Clown</i> tidak peduli. Ia bangkit dengan sempoyongan, mengabaikan luka jatuhnya, dan berlari menuju arah rumah. Menuju Ophelia.</p>
+
+            <p>Di dalam kamar, Ophelia bersandar pada lemari kaca yang berisi semua lukisan dan tembikarnya. Tubuhnya sudah berlumuran darah dari luka sayatan di tangan dan matanya. Dengan tangan yang gemetar hebat, ia melakukan tindakan terakhir yang paling berani. Ia memasukkan jemarinya ke rongga mata kirinya, mencengkeram pinggiran batu <i>Lepidolite</i> yang masih tertanam di sana, dan mencabutnya secara paksa.</p>
+
+            <p>Sarafnya ditarik, rasa sakitnya melampaui apa pun yang pernah ia rasakan, namun saat permata itu terlepas dari kepalanya, Ophelia merasakan sebuah kemerdekaan yang mutlak. Ia menggenggam erat batu ungu itu, meremukkannya dalam kepalan tangannya yang berdarah. Lalu, dengan sisa kekuatan terakhir, ia menghunjamkan serpihan kaca terbesar tepat ke jantungnya sendiri.</p>
+
+            <p>Kebebasan. Itu adalah pikiran terakhirnya sebelum kegelapan yang tenang menyelimutinya.</p>
+
+            <p><i>Clown</i> berlari melintasi lorong, tubuhnya bergetar hebat. Setiap langkah yang ia ambil terasa seperti ribuan volt listrik yang membakar ototnya. Ia bisa merasakan jantung Ophelia yang melambat di dalam dadanya sendiri. Ia terjatuh berkali-kali, merangkak di atas lantai marmer, wajahnya yang penuh riasan kini hancur oleh air mata dan keringat.</p>
+
+            <p>"Ophelia! Jangan! TIDAK!" raungnya.</p>
+
+            <p>Saat ia akhirnya berhasil mendobrak pintu kamar, langkahnya terhenti. Dunianya runtuh.</p>
+
+            <p>Ophelia bersandar di lemari kaca, kepalanya tertunduk lemas. Tubuhnya dikelilingi oleh karya-karyanya sendiri, lukisan-lukisan yang menggambarkan penderitaan dan tembikar-tembikar yang retak. Di atas lemari itu, sebuah vas mawar merah terjatuh karena guncangan pintu yang didobrak <i>Clown</i>. Kelopak-kelopak mawar itu jatuh dengan lembut, menutupi jasad Ophelia yang sudah kaku, seolah alam sedang memberikan upacara pemakaman bagi sang seniman yang menderita.</p>
+
+            <p><i>Clown</i> merangkak mendekat, tangannya yang gemetar menggapai tubuh dingin itu. Ia melihat mata <i>Lepidolite</i> yang tergeletak di lantai, sudah tidak lagi bersinar, kehilangan kekuatannya karena pemilik jiwanya telah pergi. <i>Clown</i> meraung histeris, sebuah jeritan yang memecah keheningan malam, menyadari bahwa ia telah menghancurkan satu-satunya hal yang benar-benar ia cintai.</p>
+
+            <p>Ia memeluk jasad Ophelia, menciumi keningnya yang pucat, namun tidak ada lagi detak jantung yang membalas. Mahakarya itu telah hancur, dan bersamanya, jiwa <i>Clown</i> pun ikut terkubur dalam keabadian yang ia ciptakan sendiri.</p>
+
+            <p style="text-align: center; font-size: 2em; margin-top: 50px;"><b>—• THE END •—</b></p>
+
+            <p style="font-size: 1.8em; margin-top: 40px;"><b>Epilog</b></p>
+
+            <p>Waktu adalah penawar terbaik, kata orang. Tapi bagi <i>Clown</i>, waktu adalah penyiksa paling kejam. Bulan berganti bulan, tahun berganti tahun, namun ingatan akan malam kematian Ophelia tidak pernah memudar. Sebaliknya, setiap detik yang berlalu justru menajamkan bilah penyesalan di dalam hatinya. <i>Twilight Troupe</i> telah bubar. Lampu-lampu panggungnya telah padam, tawa penontonnya telah sunyi, dan kemegahan sirkus itu kini hanyalah tumpukan debu di sudut kota yang terlupakan.</p>
+
+            <p><i>Clown</i> kini hidup di dalam kamar Ophelia, yang ia ubah menjadi tempat yang dingin dan sunyi. Dinding-dindingnya masih dipenuhi lukisan dan tembikar Ophelia yang dulu ia pandang dengan jijik, kini menjadi artefak paling berharga dari cintanya. Ia duduk di kursi kayu reyot yang ia seret dari panti asuhan, bukan di singgasana emasnya. Rambut <i>raven</i>-nya kini memutih seluruhnya, wajahnya dipenuhi kerutan yang dalam, bukan karena usia, melainkan karena kesedihan yang tak berkesudahan.</p>
+
+            <p>Setiap pagi, ia akan memandangi tabung berisi mata <i>crimson</i> yang pernah ia ambil sebelumnya. <i>Clown</i> akan memandangi mata itu selama berjam-jam, jari-jarinya yang gemetar mengusap permukaan kaca yang membingkai mata indah itu. Ia membayangkan bagaimana mata <i>crimson</i> itu dulu memancarkan kehidupan, kebaikan, dan ketakutan.</p>
+
+            <p>"Kau melihatku, Ophelia?" bisiknya, suaranya parau dan penuh penyesalan. "Kau melihat betapa hancurnya aku tanpamu?"</p>
+
+            <p>Ia sering berbicara sendiri, berhalusinasi. Terkadang, ia mendengar tawa Ophelia yang dulu, atau jeritannya yang menusuk di malam-malam penyiksaan. Ia bahkan merasa mata <i>Lepidolite</i> itu masih berdenyut di dalam kotak, mengirimkan gelombang rasa sakit yang sama seperti yang Ophelia rasakan dulu. Itu adalah hukuman yang sempurna: hidup dalam keabadian penyesalan, dikelilingi oleh hantu dari "mahakarya" yang ia hancurkan sendiri.</p>
+
+
+    </article>
+
+    <script>
+        const range = document.getElementById('fontSizeRange');
+        const container = document.getElementById('story-container');
+        
+        range.addEventListener('input', () => {
+            const paragraphs = container.querySelectorAll('p');
+            paragraphs.forEach(p => {
+                p.style.fontSize = range.value + 'px';
+            });
+        });
+    </script>
+</body>
+</html>
